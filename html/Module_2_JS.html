@@ -1,0 +1,1416 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Module 2: Spatial Decision Making &#8212; My sample book</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.4cbf315f70debaebd550c87a6162cf0f.min.css" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Module_2_JS';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Module 3: Spatial Composite Indicators" href="Module_3_JS.html" />
+    <link rel="prev" title="Module 1: Spatial Thinking in Decision Making" href="Module_1_JS.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="My sample book - Home"/>
+    <img src="_static/logo.png" class="logo__image only-dark pst-js-only" alt="My sample book - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Welcome to your Jupyter Book
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Module_1_JS.html">Module 1: Spatial Thinking in Decision Making</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Module 2: Spatial Decision Making</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Module_3_JS.html">Module 3: Spatial Composite Indicators</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FModule_2_JS.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/Module_2_JS.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Module 2: Spatial Decision Making</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction-to-spatial-decision-making">2.1. Introduction to Spatial Decision Making</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#characteristics-of-multiple-criteria-decision-making">2.2. Characteristics of Multiple Criteria Decision Making</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#spatially-explicit">2.3. Spatially Explicit</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hierarchical-structure-of-a-decision-problem">2.4. Hierarchical Structure of a Decision Problem</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-bike-docking">2.5. Example: Bike Docking</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#one-recipe-to-cook-them-all">2.6. One Recipe to Cook Them All</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hands-on-activity-land-use-suitability-for-conservation-reserve-program">Hands-On Activity: Land Use Suitability for Conservation Reserve  Program</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#recipe-step-1-define-the-set-of-evaluation-criteria">Recipe Step 1: Define the set of evaluation criteria</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#recipe-step-2-standardize-each-criterion-map-layer">Recipe Step 2: Standardize each criterion map layer</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#recipe-step-3-define-the-criterion-weights">Recipe Step 3: Define the criterion weights</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#recipe-step-4-construct-the-weighted-standardized-map-layers">Recipe Step 4: Construct the weighted standardized map layers</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#recipe-step-5-generate-the-overall-scores">Recipe Step 5: Generate the overall scores</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#recipe-step-6-rank-the-alternatives">Recipe Step 6: Rank the alternatives</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#recipe-step-7-if-you-are-satisfied-well-done">Recipe Step 7: If you are satisfied, well-done!</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exploration">Exploration:</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="module-2-spatial-decision-making">
+<h1>Module 2: Spatial Decision Making<a class="headerlink" href="#module-2-spatial-decision-making" title="Permalink to this heading">#</a></h1>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<div class="output text_html">
+<video controls width="700" style="display:block;margin:auto;">
+ <source src="https://raw.githubusercontent.com/BrownEarthLab/mappy-python/main/module-media/module2/Module2-Video1.mp4" type="video/mp4">
+ Your browser does not support the video tag.
+</video>
+</div></div>
+</div>
+<section id="introduction-to-spatial-decision-making">
+<h2>2.1. Introduction to Spatial Decision Making<a class="headerlink" href="#introduction-to-spatial-decision-making" title="Permalink to this heading">#</a></h2>
+<p>After seeing the components of spatial thinking, we can now move to the next phase of learning more about how we can use this power to solve our spatial decision problems.</p>
+<p>Any decision problem with a spatial component can be considered as a <strong>spatial decision making</strong> problem. Sometimes they are so obvious because the final output is a spatial entity, but sometimes the intermediate steps make it a spatial decision itself.</p>
+<p>In this chapter, we will focus on decision problems where we have multiple decision criteria.
+Let’s see what the characteristics of multiple criteria decision making are and what makes them unique!</p>
+</section>
+<section id="characteristics-of-multiple-criteria-decision-making">
+<h2>2.2. Characteristics of Multiple Criteria Decision Making<a class="headerlink" href="#characteristics-of-multiple-criteria-decision-making" title="Permalink to this heading">#</a></h2>
+<p>The roots of <strong>multiple criteria decision making</strong> can be traced back to the 18th century, although it wasn’t spatial back then! It is used to combine conflicting criteria into a single score.</p>
+<img src="https://raw.githubusercontent.com/BrownEarthLab/mappy-python/main/module-media/module2/Module2-Figure2.2.png" style="float: right; width: 35%; height: auto; margin-left: 10px;">
+<p>Benjamin Franklin used a simple paper system (<em>pro et contra</em> Latin for “for and against”) for deciding important issues; pros on one side and cons against on the other. By striking out the arguments on each side with the same ranking, he determined the remaining arguments to be supported. Therefore, each decision making–whether spatial or not–needs a weighing mechanism.</p>
+</section>
+<section id="spatially-explicit">
+<h2>2.3. Spatially Explicit<a class="headerlink" href="#spatially-explicit" title="Permalink to this heading">#</a></h2>
+<p>Maps are like cheat sheets for spatial reasoning. They take abstract ideas—like road density or population clusters—and turn them into something we can see, analyze, and understand at a glance.</p>
+<p>Michael Goodchild, in his <a class="reference external" href="https://doi.org/10.1111/j.1467-8306.2004.00424.x">“GIScience, geography, form, and process”</a> paper, suggests that there are four tests that can be used to determine if a model is <strong>spatially explicit</strong>:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Change in the ranking of decision alternatives are directly related to change in spatial pattern of these alternatives</p></li>
+<li><p>Decision alternatives can be geographically defined - not just “what to do?” but also “where to do it?”</p></li>
+<li><p>Spatial concepts such as location, distance, contiguity, connectivity, adjacency, or direction should exist</p></li>
+<li><p>Output of the decision outcome should be represented spatially</p></li>
+</ol>
+</div></blockquote>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<div class="output text_html">
+<video controls width="700" style="display:block;margin:auto;">
+ <source src="https://raw.githubusercontent.com/BrownEarthLab/mappy-python/main/module-media/module2/Module2-Video2.mp4" type="video/mp4">
+ Your browser does not support the video tag.
+</video>
+</div></div>
+</div>
+</section>
+<section id="hierarchical-structure-of-a-decision-problem">
+<h2>2.4. Hierarchical Structure of a Decision Problem<a class="headerlink" href="#hierarchical-structure-of-a-decision-problem" title="Permalink to this heading">#</a></h2>
+<p>When we try to make our spatial decisions, we first need to identify our goal(s). A <strong>decision goal</strong> specifies one or more objectives to achieve, such as the number of sites or regions to be selected. The goal also defines the phenomenon that is going to be modeled.  Finally, our goal also identifies the purpose of spatial analysis.</p>
+<img src="https://raw.githubusercontent.com/BrownEarthLab/mappy-python/main/module-media/module2/Module2-Figure2.4.png" style="float: right; width: 40%; height: auto; margin-left: 10px;">
+Some examples of spatial decision making goals are identifying the best site for a hazardous waste disposal facility, finding the shortest transportation route, and the best spatial pattern for an animal habitat.
+<p>As seen in figure, each objective is connected with several attributes (criteria).</p>
+</section>
+<section id="example-bike-docking">
+<h2>2.5. Example: Bike Docking<a class="headerlink" href="#example-bike-docking" title="Permalink to this heading">#</a></h2>
+<p>Let’s assume the Boston municipality decided to contribute to green transportation and increase the accessibility for the public. They have 100 possible locations over the city and the outcome of this decision process can support five more ranking locations.  However, the Metropolitan Transportation Authority is not sure which one is the best decision!</p>
+<img src="https://raw.githubusercontent.com/BrownEarthLab/mappy-python/main/module-media/module2/Module2-Figure2.5.png" style="float: right; width: 50%; height: auto; margin-left: 10px;">
+<p>In this hypothetical example, can you specify the phenomenon and purpose of the analysis?</p>
+<p>In this example:</p>
+<ul class="simple">
+<li><p>The number of sites to be located is 5</p></li>
+<li><p>The phenomena are the new bike docking stations</p></li>
+<li><p>The purpose of this study to improve public access by supporting green transportation</p></li>
+</ul>
+<p><em>Mirror, mirror on the wall, which one is the best decision of all?</em></p>
+<p>How can we achieve this goal? As decision makers we are surrounded with a large number of <strong>decision alternatives</strong>—evaluated based on a set of criteria—and we might have different preferences—weights—for each alternative.</p>
+<p>If we continue with the bike docking station example, we might try to find sites close to existing public transportation. Maybe a biker would like to travel a distance that they can’t bike, and at some point they may want to switch to the bus. Also, density and availability of bike routes are important to consider. So, in this case, we have two criteria:</p>
+<ul class="simple">
+<li><p>Proximity to existing public transport</p></li>
+<li><p>Density and availability of bike routes
+These alternatives are evaluated on the basis of multiple criteria. Some of the criteria may be qualitative, while others may be quantitative.</p></li>
+</ul>
+<p>Sustainable planning of a hazardous waste disposal facility is a complex task involving a multitude of engineering, economic, social, environmental, and political aspects. In <a class="reference external" href="http://dx.doi.org/10.1080/13658810600607709">Spain</a>, preliminary site screening for landfill sites is regulated by the European, national, and regional legislations and engineering guidelines on hazardous waste management.  According to these regulations, landfill sites cannot be located:</p>
+<ul class="simple">
+<li><p>Close to urban centers or outside urban centers</p></li>
+<li><p>Close to potentially crowded places such as schools, hospitals, or commercial centers</p></li>
+</ul>
+<p>Moreover, due to potential conflicts between local authorities, candidate land parcels should be linked to a unique municipality.</p>
+<p>Additionally, some environmental and economic factors play an important role in the decision making process. For example, the optimal areas to locate a landfill facility are clay and gypsum deposits, as leakage into underground water and surrounding land is minimized. Land suitability also decreases as slope increases. At a 15% slope, land is not suitable, since the landfill design, construction, and operation will be so expansive. Lastly, estimated expropriation costs are considered in the analysis depending on land use and vegetation coverage.</p>
+<blockquote>
+<div><p>How many objectives do we have for this land suitability problem?</p>
+<form id="form1">
+<input type="text" id="input1" placeholder="Type answer here">
+<input type="submit" value="Submit">
+</form>
+</div></blockquote>
+<div id="feedback1"></div><script>
+  document.getElementById('form1').onsubmit = function(event) {
+    event.preventDefault();
+    const userInput = document.getElementById('input1').value;
+    const feedback = document.getElementById('feedback1');
+    // answer feedback:
+    feedback.innerHTML = `<blockquote> There are <strong>6</strong> objectives for this land suitability problem:<br>
+<ol>
+  <li>Maximize distance from populated areas</li>
+  <li>Maximize distance from schools, hospitals, commercial centers</li>
+  <li>Minimize municipality  overlay</li>
+  <li>Minimize soil permeability</li>
+  <li>Minimize slope</li>
+  <li>Minimize development cost</li>
+</ol>
+</blockquote>`;
+};
+</script>
+<p>As you have noticed, some of the objectives maximize criterion and some require minimizing it. Now let’s see how we can achieve this!</p>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<div class="output text_html">
+<video controls width="700" style="display:block;margin:auto;">
+ <source src="https://raw.githubusercontent.com/BrownEarthLab/mappy-python/main/module-media/module2/Module2-Video3.mp4" type="video/mp4">
+ Your browser does not support the video tag.
+</video>
+</div></div>
+</div>
+</section>
+<section id="one-recipe-to-cook-them-all">
+<h2>2.6. One Recipe to Cook Them All<a class="headerlink" href="#one-recipe-to-cook-them-all" title="Permalink to this heading">#</a></h2>
+<p>So the question becomes: how are we going to solve our spatial decision making problems?</p>
+<p>Luckily, no matter how complex our alternatives, how many alternatives that we are dealing with, or how many decision makers will be involved in, the generic recipe is the same for all spatial decision making problems.</p>
+<p>Let’s take a look at the instructions first, then see the recipe in action.</p>
+<p><strong>Spatial Decision Making Steps:</strong></p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Define the set of evaluation criteria (map layers)</p></li>
+<li><p>Standardize each criterion map layer</p></li>
+<li><p>Define the criterion weights (relative importance) assigned to each criterion map</p></li>
+<li><p>Construct the weighted standardized map layers, multiplying standardized map layers with their corresponding weights</p></li>
+<li><p>Generate the overall score for each alternative using add overlay operations on the weighted standardized map layers</p></li>
+<li><p>Rank the alternatives according to their overall score—the highest score is the best alternative</p></li>
+</ol>
+</div></blockquote>
+<p>If you are satisfied, then well-done! You can now implement your best solution!</p>
+</section>
+<section id="hands-on-activity-land-use-suitability-for-conservation-reserve-program">
+<h2>Hands-On Activity: Land Use Suitability for Conservation Reserve  Program<a class="headerlink" href="#hands-on-activity-land-use-suitability-for-conservation-reserve-program" title="Permalink to this heading">#</a></h2>
+<p>Let’s look at a land use suitability example taken from <a class="reference external" href="https://link.springer.com/article/10.1007/s00477-018-1535-z">Şalap-Ayça and Jankowski (2008)</a>.</p>
+<p>In the United States, the Conservation Reserve Program (CRP) executes land use evaluation and improves conservation by renting highly erodible cropland or other environmentally sensitive acreage from farmers and ensuring plantation of species that will improve environmental quality.
+<img src="https://raw.githubusercontent.com/BrownEarthLab/mappy-python/main/module-media/module2/Module2-Figure2.HOA.png" style="float: right; width: 40%; height: auto; margin-left: 10px;"></p>
+<p>CRP is achieved by a score based system called the <strong>Environmental Benefit Index (EBI)</strong>. It is based on five environmental factors: wildlife, water quality, erosion, enduring benefits, and air quality. Every factor has varying levels of preferences.</p>
+<p>Decision makers come up with different <strong>preferences</strong> for each criteria and combine them into a single overall score. When the overall score has higher ranks for the predetermined threshold value for the enrollment period, the land unit is left uncultivated for that term. Even though the benefits of CRP have been observed for over 30 years, unfortunately, only the most qualified land units are selected for incentive payments due to fiscal limitations.</p>
+<p>Therefore, the overall objective becomes to define the most qualified areas that will maximize the conservation benefits by considering the multiple factors together with their varying preferences; this makes the EBI a typical example of a multi-criteria decision-making problem.</p>
+<p>Let’s see how we can apply our generic recipe steps on this real case study.</p>
+<blockquote>
+<div><p>How many criteria do we have?</p>
+<form id="form2">
+<input type="radio" id="A" name="color" value="A">
+<label for="A">2</label><br>
+<input type="radio" id="B" name="color" value="B">
+<label for="B">5</label><br>
+<input type="radio" id="C" name="color" value="C">
+<label for="C">6</label><br>
+<input type="submit" value="Submit">
+</form>
+</div></blockquote>
+<div id="feedback2"></div><script>
+  document.getElementById('form2').onsubmit = function(event) {
+    event.preventDefault();
+    const feedback = document.getElementById('feedback2');
+    // answer feedback:
+    feedback.innerHTML = `<blockquote> There are <strong>5</strong> Environmental Benefit Criteria: <br>
+<ol>
+  <li>Wildlife</li>
+  <li>Water Quality</li>
+  <li>Erosion</li>
+  <li>Enduring Benefits</li>
+  <li>Air Quality</li>
+</ol>
+</blockquote>`;
+    };
+</script><blockquote>
+<div><p>What are the alternatives in this problem?</p>
+<form id="form3">
+<input type="radio" id="A" name="color" value="A">
+<label for="A">EBI Score</label><br>
+<input type="radio" id="B" name="color" value="B">
+<label for="B">Parcel of agricultural land units</label><br>
+<input type="submit" value="Submit">
+</form>
+</div></blockquote>
+<div id="feedback3"></div><script>
+  document.getElementById('form3').onsubmit = function(event) {
+    event.preventDefault();
+    const feedback = document.getElementById('feedback3');
+    // answer feedback:
+    feedback.innerHTML = `<blockquote> <strong>Parcels of Land/Agricultural Land units</strong> are the alternatives in this spatial problem. We are trying to understand which one is the best alternative among all! EBI Score is the overall score/comparison metric that we are going to use for decision making. </blockquote>`;
+    };
+</script><blockquote>
+<div><p>What is the objective?</p>
+<form id="form4">
+<input type="radio" id="A" name="color" value="A">
+<label for="A">The higher the EBI score, the higher the level of acceptance of the land unit.</label><br>
+<input type="radio" id="B" name="color" value="B">
+<label for="B">The lower the EBI score, the higher the level of acceptance of the land unit</label><br>
+<input type="submit" value="Submit">
+</form>
+</div></blockquote>
+<div id="feedback4"></div><script>
+  document.getElementById('form4').onsubmit = function(event) {
+    event.preventDefault();
+    const feedback = document.getElementById('feedback4');
+    // answer feedback:
+    feedback.innerHTML = `<blockquote> <strong>The higher the EBI score, the higher the level of acceptance of the land unit.</strong> Therefore, our objective is to maximize the EBI score. </blockquote>`;
+    };
+</script><section id="recipe-step-1-define-the-set-of-evaluation-criteria">
+<h3>Recipe Step 1: Define the set of evaluation criteria<a class="headerlink" href="#recipe-step-1-define-the-set-of-evaluation-criteria" title="Permalink to this heading">#</a></h3>
+<p>The <strong>evaluation criteria</strong> for this land use example are:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Wildlife</p></li>
+<li><p>Water Quality</p></li>
+<li><p>Erosion</p></li>
+<li><p>Enduring Benefits</p></li>
+<li><p>Air quality</p></li>
+</ol>
+</div></blockquote>
+<p>For this case, let’s assume that all these layers are given as an ASCII file for us. <strong>ASCII</strong> files are plain text files that store text using the <a class="reference external" href="https://www.ascii-code.com/">American Standard Code for Information Interchange (ASCII)</a> encoding. Each character in the file—letters, numbers, and symbols—is represented by a unique 7-bit binary code. They are widely readable by most computer programs and operating systems.</p>
+<p>Let’s visualize our ASCII text files and see what they look like!</p>
+<p>As always, we have to first import the necessary <strong>libraries</strong> before starting. We will use <a class="reference external" href="https://numpy.org/doc/stable/index.html"><em><strong>NumPy</strong></em></a> for numerical operations with grid-like data, as well as <a class="reference external" href="https://matplotlib.org/stable/index.html"><em><strong>Matplotlib</strong></em></a> for plotting the data.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Import numpy and matplotlib libraries</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Now, we can load the data from the provided text files as <em>NumPy</em> arrays and visualize it using <em>Matplotlib</em> plots. <strong>NumPy arrays</strong> are a basic data structure of  Python; they are multi-dimensional lists of numbers of one data type (ie. all integers or floats) that can easily be mathematically and computationally manipulated in a grid-like array form.</p>
+<p>Let’s practice creating arrays! We will start by creating a two-dimensional (2D) list to convert into an array:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Create a 2D list (list of lists) </span>
+<span class="n">list_2d</span> <span class="o">=</span> <span class="p">[[</span><span class="mf">1.0</span><span class="p">,</span><span class="mf">2.0</span><span class="p">,</span><span class="mf">3.0</span><span class="p">,</span><span class="mf">4.0</span><span class="p">],[</span><span class="mf">4.0</span><span class="p">,</span><span class="mf">3.0</span><span class="p">,</span><span class="mf">2.0</span><span class="p">,</span><span class="mf">1.0</span><span class="p">]]</span>
+
+<span class="c1"># Print the 2D list to see what it looks like</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">list_2d</span><span class="p">)</span>
+
+<span class="c1"># Check the data type of the list</span>
+<span class="nb">type</span><span class="p">(</span><span class="n">list_2d</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[1.0, 2.0, 3.0, 4.0], [4.0, 3.0, 2.0, 1.0]]
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>list
+</pre></div>
+</div>
+</div>
+</div>
+<p>Now let’s convert the list into a <strong>NumPy array</strong>:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Convert the 2D list to a NumPy array</span>
+<span class="n">array</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">list_2d</span><span class="p">)</span>
+
+<span class="c1"># Print the NumPy array to see what it looks like</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">array</span><span class="p">)</span>
+
+<span class="c1"># Check the data type of the NumPy array</span>
+<span class="nb">type</span><span class="p">(</span><span class="n">array</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[1. 2. 3. 4.]
+ [4. 3. 2. 1.]]
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>numpy.ndarray
+</pre></div>
+</div>
+</div>
+</div>
+<p>With the array data type, we can easily extract additional information about our array, including the dimensions (number of axes), shape (number of rows and columns), total number of elements, and data type:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Print the dimensions of the array</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">array</span><span class="o">.</span><span class="n">ndim</span><span class="p">)</span>
+
+<span class="c1"># Print the shape of the array (rows, columns)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">array</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+
+<span class="c1"># Print the size of the array</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">array</span><span class="o">.</span><span class="n">size</span><span class="p">)</span>
+
+<span class="c1"># Print the data type of the array</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">array</span><span class="o">.</span><span class="n">dtype</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2
+(2, 4)
+8
+float64
+</pre></div>
+</div>
+</div>
+</div>
+<p>For our ASCII files, each text file contains <strong>metadata</strong>—additional information about our data such as the number of rows and columns—for the first 6 lines, followed by a large array of numbers for our criteria data. We can read in our desired data as <em>NumPy arrays</em> using the <em>NumPy</em> method <strong>loadtext()</strong> and specifying parameters like the file name (as a string) and the number of rows to skip (<em>skiprows</em>).</p>
+<p>Once the data is loaded in as an array of numbers, we can plot the data using the <em>Pyplot</em> submodule in <em>Matplotlib</em>. The <strong>title()</strong> function in <em>Matplotlib Pyplot</em> is used to add a title to a plot or other Axes object. The <strong>imshow()</strong> method displays images of 2D data.</p>
+<p>The text files are named in numerical order of the criteria listed above, so the data for the Wildlife layer is stored in a file named <em>n1.txt</em>.
+Let’s see what it looks like!</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Load the Wildlife data from the text file</span>
+<span class="n">nArray</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">loadtxt</span><span class="p">(</span><span class="s2">&quot;n1.txt&quot;</span><span class="p">,</span> <span class="n">skiprows</span><span class="o">=</span><span class="mi">6</span><span class="p">)</span>
+
+<span class="c1"># Plot the data</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Wildlife&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">nArray</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">FileNotFoundError</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">8</span><span class="p">],</span> <span class="n">line</span> <span class="mi">2</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># Load the Wildlife data from the text file</span>
+<span class="ne">----&gt; </span><span class="mi">2</span> <span class="n">nArray</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">loadtxt</span><span class="p">(</span><span class="s2">&quot;n1.txt&quot;</span><span class="p">,</span> <span class="n">skiprows</span><span class="o">=</span><span class="mi">6</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="c1"># Plot the data</span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Wildlife&quot;</span><span class="p">)</span>
+
+<span class="nn">File /opt/anaconda3/lib/python3.12/site-packages/numpy/lib/npyio.py:1373,</span> in <span class="ni">loadtxt</span><span class="nt">(fname, dtype, comments, delimiter, converters, skiprows, usecols, unpack, ndmin, encoding, max_rows, quotechar, like)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1370</span> <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">delimiter</span><span class="p">,</span> <span class="nb">bytes</span><span class="p">):</span>
+<span class="g g-Whitespace">   </span><span class="mi">1371</span>     <span class="n">delimiter</span> <span class="o">=</span> <span class="n">delimiter</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;latin1&#39;</span><span class="p">)</span>
+<span class="ne">-&gt; </span><span class="mi">1373</span> <span class="n">arr</span> <span class="o">=</span> <span class="n">_read</span><span class="p">(</span><span class="n">fname</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">dtype</span><span class="p">,</span> <span class="n">comment</span><span class="o">=</span><span class="n">comment</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="n">delimiter</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1374</span>             <span class="n">converters</span><span class="o">=</span><span class="n">converters</span><span class="p">,</span> <span class="n">skiplines</span><span class="o">=</span><span class="n">skiprows</span><span class="p">,</span> <span class="n">usecols</span><span class="o">=</span><span class="n">usecols</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1375</span>             <span class="n">unpack</span><span class="o">=</span><span class="n">unpack</span><span class="p">,</span> <span class="n">ndmin</span><span class="o">=</span><span class="n">ndmin</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="n">encoding</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1376</span>             <span class="n">max_rows</span><span class="o">=</span><span class="n">max_rows</span><span class="p">,</span> <span class="n">quote</span><span class="o">=</span><span class="n">quotechar</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1378</span> <span class="k">return</span> <span class="n">arr</span>
+
+<span class="nn">File /opt/anaconda3/lib/python3.12/site-packages/numpy/lib/npyio.py:992,</span> in <span class="ni">_read</span><span class="nt">(fname, delimiter, comment, quote, imaginary_unit, usecols, skiplines, max_rows, converters, ndmin, unpack, dtype, encoding)</span>
+<span class="g g-Whitespace">    </span><span class="mi">990</span>     <span class="n">fname</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">fspath</span><span class="p">(</span><span class="n">fname</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">991</span> <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">fname</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span>
+<span class="ne">--&gt; </span><span class="mi">992</span>     <span class="n">fh</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">lib</span><span class="o">.</span><span class="n">_datasource</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">fname</span><span class="p">,</span> <span class="s1">&#39;rt&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="n">encoding</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">993</span>     <span class="k">if</span> <span class="n">encoding</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">994</span>         <span class="n">encoding</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="n">fh</span><span class="p">,</span> <span class="s1">&#39;encoding&#39;</span><span class="p">,</span> <span class="s1">&#39;latin1&#39;</span><span class="p">)</span>
+
+<span class="nn">File /opt/anaconda3/lib/python3.12/site-packages/numpy/lib/_datasource.py:193,</span> in <span class="ni">open</span><span class="nt">(path, mode, destpath, encoding, newline)</span>
+<span class="g g-Whitespace">    </span><span class="mi">156</span><span class="w"> </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="g g-Whitespace">    </span><span class="mi">157</span><span class="sd"> Open `path` with `mode` and return the file object.</span>
+<span class="g g-Whitespace">    </span><span class="mi">158</span><span class="sd"> </span>
+<span class="sd">   (...)</span>
+<span class="g g-Whitespace">    </span><span class="mi">189</span><span class="sd"> </span>
+<span class="g g-Whitespace">    </span><span class="mi">190</span><span class="sd"> &quot;&quot;&quot;</span>
+<span class="g g-Whitespace">    </span><span class="mi">192</span> <span class="n">ds</span> <span class="o">=</span> <span class="n">DataSource</span><span class="p">(</span><span class="n">destpath</span><span class="p">)</span>
+<span class="ne">--&gt; </span><span class="mi">193</span> <span class="k">return</span> <span class="n">ds</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="n">mode</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="n">encoding</span><span class="p">,</span> <span class="n">newline</span><span class="o">=</span><span class="n">newline</span><span class="p">)</span>
+
+<span class="nn">File /opt/anaconda3/lib/python3.12/site-packages/numpy/lib/_datasource.py:533,</span> in <span class="ni">DataSource.open</span><span class="nt">(self, path, mode, encoding, newline)</span>
+<span class="g g-Whitespace">    </span><span class="mi">530</span>     <span class="k">return</span> <span class="n">_file_openers</span><span class="p">[</span><span class="n">ext</span><span class="p">](</span><span class="n">found</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="n">mode</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">531</span>                               <span class="n">encoding</span><span class="o">=</span><span class="n">encoding</span><span class="p">,</span> <span class="n">newline</span><span class="o">=</span><span class="n">newline</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">532</span> <span class="k">else</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">533</span>     <span class="k">raise</span> <span class="ne">FileNotFoundError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">path</span><span class="si">}</span><span class="s2"> not found.&quot;</span><span class="p">)</span>
+
+<span class="ne">FileNotFoundError</span>: n1.txt not found.
+</pre></div>
+</div>
+</div>
+</div>
+<p>Let’s check the Air Quality layer as well. We can change the file name to <em>n5.txt</em> to do so.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Load the Air Quality data </span>
+<span class="n">nArray</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">loadtxt</span><span class="p">(</span><span class="s2">&quot;n5.txt&quot;</span><span class="p">,</span> <span class="n">skiprows</span><span class="o">=</span><span class="mi">6</span><span class="p">)</span>
+
+<span class="c1"># Plot the data</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Air Quality&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">nArray</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.image.AxesImage at 0x1329a6bd0&gt;
+</pre></div>
+</div>
+<img alt="_images/d881b782368308c6a8300357f47fe53b1115a7371f9ac0676d6fccfdb65bf24e.png" src="_images/d881b782368308c6a8300357f47fe53b1115a7371f9ac0676d6fccfdb65bf24e.png" />
+</div>
+</div>
+<p>Great! Now we have an understanding of what our criteria layers look like. Let’s move to the next step of standardization!</p>
+</section>
+<section id="recipe-step-2-standardize-each-criterion-map-layer">
+<h3>Recipe Step 2: Standardize each criterion map layer<a class="headerlink" href="#recipe-step-2-standardize-each-criterion-map-layer" title="Permalink to this heading">#</a></h3>
+<p>In order to understand what <strong>standardization</strong> is and why we need it, let’s check the <strong>maximum</strong> and <strong>minimum</strong> values of each layer.</p>
+<p>For a single criterion, notice how we can get the minimum and maximum. Also notice that we have some values with no data in this raster, which is assigned as -9999. We can use the <em>numpy</em> <em><strong>mask</strong></em> method to eliminate -9999 from becoming the minimum value.</p>
+<p>A <strong>masked array</strong> is a specialized <em>NumPy array</em> that has an associated <strong>mask</strong>, a boolean array of the same shape as the data, where <em>True</em> indicates a masked (invalid or missing) value and <em>False</em> indicates a valid (unmasked) value. <strong>Boolean</strong> operators evaluate whether a variable or expression is <em>True</em> or <em>False</em>. Booleans can be compared using <em>and</em> or <em>or</em> operators; the <em>or</em> operator results in <em>True</em> if either Boolean is <em>True</em>, while the <em>and</em> operator results in <em>True</em> if both Booleans are <em>True</em>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="n">b</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span> <span class="ow">or</span> <span class="n">b</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span> <span class="ow">and</span> <span class="n">b</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
+False
+</pre></div>
+</div>
+</div>
+</div>
+<p>We can test the equivalance of two expression by using the <em><strong>is</strong></em> keyword and <em><strong>==</strong></em> operation as well. The difference between them is that <em><strong>==</strong></em> compares the values of the variables inside the objects, whereas <em><strong>is</strong></em> compares the objects themselves.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">list1</span> <span class="o">=</span> <span class="p">[</span><span class="mi">8</span><span class="p">,</span><span class="mi">18</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">48</span><span class="p">]</span>
+<span class="n">list2</span> <span class="o">=</span> <span class="p">[</span><span class="mi">8</span><span class="p">,</span><span class="mi">18</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">48</span><span class="p">]</span>
+
+<span class="c1"># Check if list1 and list2 are the same object</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">list1</span> <span class="ow">is</span> <span class="n">list2</span><span class="p">)</span>
+
+<span class="c1"># Check if list1 and list2 have the same values</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">list1</span> <span class="o">==</span> <span class="n">list2</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>False
+True
+</pre></div>
+</div>
+</div>
+</div>
+<p>For our data, our mask will be a boolean of the array data being equal to -9999 so that we can hide values that are <em>True</em> under the boolean mask.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Load the Wildlife data </span>
+<span class="n">nArray</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">loadtxt</span><span class="p">(</span><span class="s2">&quot;n1.txt&quot;</span><span class="p">,</span> <span class="n">skiprows</span><span class="o">=</span><span class="mi">6</span><span class="p">)</span>
+
+<span class="c1"># Mask the no data values (-9999)</span>
+<span class="n">masked_nArray</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ma</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">nArray</span><span class="p">,</span> <span class="n">mask</span><span class="o">=</span><span class="p">(</span><span class="n">nArray</span><span class="o">==-</span><span class="mi">9999</span><span class="p">))</span>
+
+<span class="c1"># If you print the masked array, it will show the data without the -9999 values</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">masked_nArray</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[22.992 22.885 22.781 ... 17.525 17.595 17.667]
+ [23.188 23.09 22.995 ... 17.521 17.594 17.67]
+ [23.362 23.27 23.174 ... 17.517 17.594 17.674]
+ ...
+ [29.758 29.851 29.917 ... 37.033 37.02 37.0]
+ [29.716 29.809 29.875 ... 37.085 37.073 37.054]
+ [29.671 29.764 29.831 ... 37.131 37.12 37.102]]
+</pre></div>
+</div>
+</div>
+</div>
+<p>Now that we have cleaned up our array via masking, we can determine the maximum and minimum using the <strong>max()</strong> and <strong>min()</strong> methods, respectively.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#  Determine the maximum and minimum values of the Wildlife criterion</span>
+<span class="n">nmax</span> <span class="o">=</span> <span class="n">masked_nArray</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>
+<span class="n">nmin</span> <span class="o">=</span> <span class="n">masked_nArray</span><span class="o">.</span><span class="n">min</span><span class="p">()</span>
+
+<span class="c1"># Print the maximum and minimum values to see!</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Maximum of Wildlife criterion is: &quot;</span> <span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">nmax</span><span class="p">)</span><span class="o">+</span> <span class="s2">&quot; and minimum of Wildlife criterion is: &quot;</span> <span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">nmin</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Maximum of Wildlife criterion is: 42.052 and minimum of Wildlife criterion is: 12.826
+</pre></div>
+</div>
+</div>
+</div>
+<p>Now let’s determine the minimum and maximum values from all five of the criteria. To iterate through all five criteria text files, we can write a <em>for loop</em> and print different results using <em>if-else</em> statements.</p>
+<p><em><strong>If-else</strong></em> statements are conditional statements that enable the evaluation of multiple conditions in a sequential manner; inputs can be run through different lines of code and render different outcomes depending on specific conditions. The statement structure starts with the <em>if:</em> keyword, followed by a block of code to run if that condition is met. If the condition evaluates to <em>True</em>, the lines of code in the block are run. If the condition evaluates to <em>False</em>, the lines of code are skipped, and the program moves on to the next statement after the <em>if</em> structure.</p>
+<p>Let’s see a basic example:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span><span class="o">=</span><span class="mi">0</span>
+<span class="k">if</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;x is negative&quot;</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">x</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;x is zero&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;x is positive&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>x is zero
+</pre></div>
+</div>
+</div>
+</div>
+<p>That was easy. Now let’s combine <em><strong>if-else</strong></em> statements with finding maximums. How can we get the maximum of the list? Let’s first see how machines can find the maximum in a binary operation:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Determine the maximum value from list1 compared to the initial maximum value</span>
+<span class="c1"># list1 = [8,18,6, 48]</span>
+
+<span class="c1"># Set the initial maximum value</span>
+<span class="n">maximum</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="c1"># Print the new maximum while iterating through the list</span>
+<span class="k">if</span> <span class="n">list1</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">maximum</span><span class="p">:</span>
+    <span class="c1"># If the 0th element of list1 is greater than the current maximum, update and print the new maximum </span>
+    <span class="n">maximum</span> <span class="o">=</span> <span class="n">list1</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;New maximum is: &quot;</span><span class="p">,</span> <span class="n">maximum</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="n">list1</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">maximum</span><span class="p">:</span>
+    <span class="c1"># If the 1st element of list1 is greater than the current maximum, update and print the new maximum </span>
+    <span class="n">maximum</span> <span class="o">=</span> <span class="n">list1</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+    <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;New maximum is: &quot;</span><span class="p">,</span> <span class="n">maximum</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">list1</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">maximum</span><span class="p">:</span>
+    <span class="c1"># If the 2nd element of list1 is greater than the current maximum, update and print the new maximum </span>
+    <span class="n">maximum</span> <span class="o">=</span> <span class="n">list1</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+    <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;New maximum is: &quot;</span><span class="p">,</span> <span class="n">maximum</span><span class="p">)</span>    
+<span class="k">if</span> <span class="n">list1</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">maximum</span><span class="p">:</span>
+    <span class="c1"># If the 3rd element of list1 is greater than the current maximum, update and print the new maximum </span>
+    <span class="n">maximum</span> <span class="o">=</span> <span class="n">list1</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
+    <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;New maximum is: &quot;</span><span class="p">,</span> <span class="n">maximum</span><span class="p">)</span> 
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>New maximum is:  8
+New maximum is:  18
+New maximum is:  48
+</pre></div>
+</div>
+</div>
+</div>
+<p>Finally, we can combine <em><strong>if-else</strong></em> statements and maximums with <strong>for loops</strong> to make this iteration through lists more efficient:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Determine the maximum value from list1 compared to the initial maximum value</span>
+<span class="c1"># list1 = [8,18,6, 48]</span>
+
+<span class="c1"># Set the initial maximum value</span>
+<span class="n">maximum</span><span class="o">=</span><span class="mi">0</span>
+
+<span class="c1"># Iterate through the list and print the new maximum</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">list1</span><span class="p">)):</span>
+    <span class="c1"># For each element in the list, if the current value is greater than the maximum, update and print the new maximum</span>
+    <span class="k">if</span> <span class="n">list1</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">maximum</span><span class="p">:</span>
+        <span class="n">maximum</span><span class="o">=</span><span class="n">list1</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+        <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;New maximum is: &quot;</span><span class="p">,</span> <span class="n">maximum</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>New maximum is:  8
+New maximum is:  18
+New maximum is:  48
+</pre></div>
+</div>
+</div>
+</div>
+<p>Now let’s apply this to our EBI data to print the the criterion maximums for the <em>1st</em> and <em>nth</em> criterions:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Create a for loop to determine the max and min of each criterion</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">):</span>
+    <span class="n">nArray</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">loadtxt</span><span class="p">(</span><span class="s2">&quot;n&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot;.txt&quot;</span><span class="p">,</span> <span class="n">skiprows</span><span class="o">=</span><span class="mi">6</span><span class="p">)</span>
+
+    <span class="n">masked_nArray</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ma</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">nArray</span><span class="p">,</span> <span class="n">mask</span><span class="o">=</span><span class="p">(</span><span class="n">nArray</span><span class="o">==-</span><span class="mi">9999</span><span class="p">))</span>
+    <span class="n">nmax</span> <span class="o">=</span> <span class="n">masked_nArray</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>
+    <span class="n">nmin</span> <span class="o">=</span> <span class="n">masked_nArray</span><span class="o">.</span><span class="n">min</span><span class="p">()</span>
+    
+    <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Maximum of &quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot;st criterion is: &quot;</span> <span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">nmax</span><span class="p">)</span><span class="o">+</span> <span class="s2">&quot; and minimum of &quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot;st criterion is: &quot;</span> <span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">nmin</span><span class="p">))</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Maximum of &quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot;th criterion is: &quot;</span> <span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">nmax</span><span class="p">)</span><span class="o">+</span> <span class="s2">&quot; and minimum of &quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot;th criterion is: &quot;</span> <span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">nmin</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Maximum of 1st criterion is: 42.052 and minimum of 1st criterion is: 12.826
+Maximum of 2th criterion is: 60.0 and minimum of 2th criterion is: 5.0
+Maximum of 3th criterion is: 100.0 and minimum of 3th criterion is: 0.0
+Maximum of 4th criterion is: 22.253 and minimum of 4th criterion is: 1.116
+Maximum of 5th criterion is: 45.0 and minimum of 5th criterion is: 0.0
+</pre></div>
+</div>
+</div>
+</div>
+<p>Nice job!  Now, as you have noticed, we have various maxima. Namely, when we determine the maximum wildlife for a pixel, it is not the same value for air quality. After all, we can’t add apples and oranges, right? The criteria need to be standardized in order to make further addition operations.</p>
+<p>The <strong>standardization</strong> procedure involves transforming the raw data into <strong>standardized scores</strong>. First, the maximum and minimum values from the raw data layer need to be determined (luckily we already did that!). Then, the following rules apply:</p>
+<blockquote>
+<div><p>If we need to <strong>minimize</strong> the criterion: take the difference between maximum value and the cell value and divide it by the range (difference between minimum and maximum):
+$<span class="math notranslate nohighlight">\(
+\text{standardized value} = \frac{\text{maximum} - \text{cell value}}{\text{range}}
+\)</span><span class="math notranslate nohighlight">\(
+If we need to **maximize** the criterion: take the difference between the cell value and minimum value and divide it by the range (difference between minimum and maximum):
+\)</span><span class="math notranslate nohighlight">\(
+\text{standardized value} = \frac{\text{cell value} - \text{minimum}}{\text{range}}
+\)</span>$</p>
+</div></blockquote>
+<p>The major advantage of this procedure is that the scale of measurement varies precisely between 0 and 1 for each criterion. The <strong>worst standardized score</strong> is always equal to 0, and the <strong>best score</strong> equals 1.0.</p>
+<p>Let’s try this standardization process with the Wildlife layer by maximizing the criterion.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Load the Wildlife data </span>
+<span class="n">nArray</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">loadtxt</span><span class="p">(</span><span class="s2">&quot;n1.txt&quot;</span><span class="p">,</span> <span class="n">skiprows</span><span class="o">=</span><span class="mi">6</span><span class="p">)</span>
+
+<span class="c1"># Mask the no data values (-9999)</span>
+<span class="n">masked_nArray</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ma</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">nArray</span><span class="p">,</span> <span class="n">mask</span><span class="o">=</span><span class="p">(</span><span class="n">nArray</span> <span class="o">==</span> <span class="o">-</span><span class="mi">9999</span><span class="p">))</span>
+
+<span class="c1"># Determine the maximum and minimum values of the Wildlife criterion</span>
+<span class="n">nmax</span> <span class="o">=</span> <span class="n">masked_nArray</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>
+<span class="n">nmin</span> <span class="o">=</span> <span class="n">masked_nArray</span><span class="o">.</span><span class="n">min</span><span class="p">()</span>
+
+<span class="c1"># Standardize by maximizing the criterion</span>
+<span class="n">nrange</span> <span class="o">=</span> <span class="n">nmax</span> <span class="o">-</span> <span class="n">nmin</span>
+<span class="n">standardizednArray</span> <span class="o">=</span> <span class="p">(</span><span class="n">masked_nArray</span> <span class="o">-</span> <span class="n">nmin</span><span class="p">)</span> <span class="o">/</span> <span class="n">nrange</span>
+
+<span class="c1"># Determine the standardized maximum and minimum values</span>
+<span class="n">nstdmax</span> <span class="o">=</span> <span class="n">standardizednArray</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>
+<span class="n">nstdmin</span> <span class="o">=</span> <span class="n">standardizednArray</span><span class="o">.</span><span class="n">min</span><span class="p">()</span>
+
+<span class="c1"># Print the standardized maximum and minimum values to see!</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Standardized maximum of Wildlife criterion is: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">nstdmax</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot; and standardized minimum of Wildlife criterion is: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">nstdmin</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Standardized maximum of Wildlife criterion is: 1.0 and standardized minimum of Wildlife criterion is: 0.0
+</pre></div>
+</div>
+</div>
+</div>
+<p>To standardize all of the criteria values, we can use a <strong>for loop</strong> again.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Create a for loop to standardize and determine the standardized max and min of each criterion</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">):</span>
+    <span class="n">nArray</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">loadtxt</span><span class="p">(</span><span class="s2">&quot;n&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot;.txt&quot;</span><span class="p">,</span> <span class="n">skiprows</span><span class="o">=</span><span class="mi">6</span><span class="p">)</span>
+    
+    <span class="n">masked_nArray</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ma</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">nArray</span><span class="p">,</span> <span class="n">mask</span><span class="o">=</span><span class="p">(</span><span class="n">nArray</span><span class="o">==-</span><span class="mi">9999</span><span class="p">))</span>
+    <span class="n">nmax</span> <span class="o">=</span> <span class="n">masked_nArray</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>
+    <span class="n">nmin</span> <span class="o">=</span> <span class="n">masked_nArray</span><span class="o">.</span><span class="n">min</span><span class="p">()</span>
+
+    <span class="n">nrange</span> <span class="o">=</span> <span class="n">nmax</span> <span class="o">-</span> <span class="n">nmin</span>
+    <span class="n">standardizednArray</span> <span class="o">=</span> <span class="p">(</span><span class="n">masked_nArray</span> <span class="o">-</span> <span class="n">nmin</span><span class="p">)</span> <span class="o">/</span> <span class="n">nrange</span>
+
+    <span class="n">nstdmax</span> <span class="o">=</span> <span class="n">standardizednArray</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>
+    <span class="n">nstdmin</span> <span class="o">=</span> <span class="n">standardizednArray</span><span class="o">.</span><span class="n">min</span><span class="p">()</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Standardized maximum is: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">nstdmax</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot; and standardized minimum is: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">nstdmin</span><span class="p">))</span>
+    <span class="n">np</span><span class="o">.</span><span class="n">savetxt</span><span class="p">(</span><span class="s2">&quot;stdn&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;.txt&quot;</span><span class="p">,</span> <span class="n">standardizednArray</span><span class="p">,</span> <span class="n">fmt</span><span class="o">=</span><span class="s1">&#39;</span><span class="si">%1.3f</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="s1">&#39; &#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Standardized maximum is: 1.0 and standardized minimum is: 0.0
+Standardized maximum is: 1.0 and standardized minimum is: 0.0
+Standardized maximum is: 1.0 and standardized minimum is: 0.0
+Standardized maximum is: 1.0 and standardized minimum is: 0.0
+Standardized maximum is: 1.0 and standardized minimum is: 0.0
+</pre></div>
+</div>
+</div>
+</div>
+<p>Well done! Now we are ready for the next step of weighting!</p>
+</section>
+<section id="recipe-step-3-define-the-criterion-weights">
+<h3>Recipe Step 3: Define the criterion weights<a class="headerlink" href="#recipe-step-3-define-the-criterion-weights" title="Permalink to this heading">#</a></h3>
+<p><strong>Criterion weights</strong> tell us how important one criterion is over the other, relatively. For example, if the decision makers’ consensus is that protecting wildlife is the most important among all, then that criterion takes the highest weight. Criteria weights range from 0 to 1. No matter how we distribute our preference among the criteria, the <strong>weight sum</strong> always equals to 1—this is because there is always a trade-off between criteria. If you are preferring one over another, then the rate of the latter one would be inversely proportional.</p>
+<p>There are various consensus building tools to decide the weights, including Analytical Hierarchy Process, Fuzzy Aggregate, Ordered Weighted Average, and Outranking/Concordance Methods. However, for this example, we will proceed with the following weights for each criterion:</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Criterion</p></th>
+<th class="head"><p>Weight</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Wildlife</p></td>
+<td><p>0.22</p></td>
+</tr>
+<tr class="row-odd"><td><p>Water Quality</p></td>
+<td><p>0.22</p></td>
+</tr>
+<tr class="row-even"><td><p>Erosion</p></td>
+<td><p>0.17</p></td>
+</tr>
+<tr class="row-odd"><td><p>Enduring Benefits</p></td>
+<td><p>0.17</p></td>
+</tr>
+<tr class="row-even"><td><p>Air Quality</p></td>
+<td><p>0.22</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>By looking at these weights, we can tell that Wildlife, Water Quality, and Air Quality are considered slightly more important than Erosion and Enduring Benefits. Let’s see how we can reflect our preferences.</p>
+</section>
+<section id="recipe-step-4-construct-the-weighted-standardized-map-layers">
+<h3>Recipe Step 4: Construct the weighted standardized map layers<a class="headerlink" href="#recipe-step-4-construct-the-weighted-standardized-map-layers" title="Permalink to this heading">#</a></h3>
+<p>If you remember, we generated standardized layers and saved them. Now, it is time to construct the weighted standardized map layers. In multi-criteria decision making literature, this method is referred to as <strong>Simple Additive Method (SAM)</strong> or <strong>Weighted Linear Combination (WLC)</strong>.</p>
+<p>One advantage of WLC is that the method can easily be implemented within the GIS environment using map algebra operations. And the formula is simple too:</p>
+<blockquote>
+<div><div class="math notranslate nohighlight">
+\[
+\text{weighted standardized layer} = \text{criterion weight} * \text{criterion value}
+\]</div>
+</div></blockquote>
+<p>Let’s see how we can construct weighted standardized layers.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Define the weights for each criterion</span>
+<span class="n">w1</span> <span class="o">=</span> <span class="mf">0.22</span>
+<span class="n">w2</span> <span class="o">=</span> <span class="mf">0.22</span>
+<span class="n">w3</span> <span class="o">=</span> <span class="mf">0.17</span>
+<span class="n">w4</span> <span class="o">=</span> <span class="mf">0.17</span>
+<span class="n">w5</span> <span class="o">=</span> <span class="mf">0.22</span>
+
+<span class="c1"># Load the standardized Wildlife data</span>
+<span class="n">c1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">loadtxt</span><span class="p">(</span><span class="s2">&quot;stdn1.txt&quot;</span><span class="p">)</span>
+
+<span class="c1"># Mask the no data values (-9999)</span>
+<span class="n">c1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ma</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">c1</span><span class="p">,</span> <span class="n">mask</span><span class="o">=</span><span class="p">(</span><span class="n">c1</span><span class="o">==-</span><span class="mi">9999</span><span class="p">))</span>
+
+<span class="c1"># Calculate the weighted standardized map layer using the WLC method</span>
+<span class="n">weighted_std</span> <span class="o">=</span> <span class="n">w1</span> <span class="o">*</span> <span class="n">c1</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Now let’s write a <strong>for loop</strong> again to construct all the weighted standardized criteria map layers.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Define the weights for each criterion in a list</span>
+<span class="n">weight_list</span> <span class="o">=</span> <span class="p">[</span><span class="n">w1</span><span class="p">,</span> <span class="n">w2</span><span class="p">,</span> <span class="n">w3</span><span class="p">,</span> <span class="n">w4</span><span class="p">,</span> <span class="n">w5</span><span class="p">]</span>
+
+<span class="c1"># Create a for loop to construct the weighted standardized layer for each criterion</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">weight_list</span><span class="p">)):</span>
+    <span class="n">c</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">loadtxt</span><span class="p">(</span><span class="s2">&quot;stdn&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;.txt&quot;</span><span class="p">)</span>
+    <span class="n">c</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ma</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">c</span><span class="p">,</span> <span class="n">mask</span><span class="o">=</span><span class="p">(</span><span class="n">c</span><span class="o">==-</span><span class="mi">9999</span><span class="p">))</span>
+    <span class="n">weighted_std</span> <span class="o">=</span> <span class="n">weight_list</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="n">c</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="recipe-step-5-generate-the-overall-scores">
+<h3>Recipe Step 5: Generate the overall scores<a class="headerlink" href="#recipe-step-5-generate-the-overall-scores" title="Permalink to this heading">#</a></h3>
+<p>Now it’s time to calculate the <strong>overall score</strong> for each alternative.  Namely, we need to <strong>overlay</strong> and see where we have the maximum of all criteria. This operation is another basic algebraic operation-sum:</p>
+<blockquote>
+<div><div class="math notranslate nohighlight">
+\[
+\text{overall score} = \Sigma(\text{weight} * \text{criteria value})
+\]</div>
+</div></blockquote>
+<p><strong>Sigma (<span class="math notranslate nohighlight">\( \Sigma \)</span>)</strong> is a sum operator in mathematics. That means we need to first multiply criterion value with criterion weight, then repeat this for all criteria. Once we have the weighted layers, we need to sum them up to get the total score.</p>
+<p>To sum all the weighted standardized layers and get an overall score, we need to first create an <strong>empty array</strong> of zeros as a placeholder for the actual calualted scores. For our data, we will specify the shape of this array to have 1314 rows and 1308 columns to match the shape of our criterion layer data:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># weight_list = [w1, w2, w3, w4, w5]</span>
+
+<span class="c1"># Initialize an empty array to hold the overall scores</span>
+<span class="n">overall</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">empty</span><span class="p">([</span><span class="mi">1314</span><span class="p">,</span> <span class="mi">1308</span><span class="p">])</span>
+
+<span class="c1"># Create a for loop to construct the weighted standardized layer for each criterion</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">weight_list</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+    <span class="n">c</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">loadtxt</span><span class="p">(</span><span class="s2">&quot;stdn&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;.txt&quot;</span><span class="p">)</span>
+    <span class="n">c</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ma</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">c</span><span class="p">,</span> <span class="n">mask</span><span class="o">=</span><span class="p">(</span><span class="n">c</span><span class="o">==-</span><span class="mi">9999</span><span class="p">))</span>
+    <span class="n">weighted_std</span> <span class="o">=</span> <span class="n">weight_list</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="n">c</span>
+
+    <span class="n">overall</span> <span class="o">=</span> <span class="n">weighted_std</span> <span class="o">+</span> <span class="n">overall</span>
+
+
+    <span class="c1"># !!! EDIT: ERROR because OVERALL = 1308 cols but WEIGHTED_STD = 1322 cols !!!</span>
+
+
+<span class="c1"># Plot the overall scores</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Overall Score&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">overall</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ValueError</span><span class="g g-Whitespace">                                </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">23</span><span class="p">],</span> <span class="n">line</span> <span class="mi">12</span>
+<span class="g g-Whitespace">      </span><span class="mi">9</span>     <span class="n">c</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ma</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">c</span><span class="p">,</span> <span class="n">mask</span><span class="o">=</span><span class="p">(</span><span class="n">c</span><span class="o">==-</span><span class="mi">9999</span><span class="p">))</span>
+<span class="g g-Whitespace">     </span><span class="mi">10</span>     <span class="n">weighted_std</span> <span class="o">=</span> <span class="n">weight_list</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="n">c</span>
+<span class="ne">---&gt; </span><span class="mi">12</span>     <span class="n">overall</span> <span class="o">=</span> <span class="n">weighted_std</span> <span class="o">+</span> <span class="n">overall</span>
+<span class="g g-Whitespace">     </span><span class="mi">15</span>     <span class="c1"># !!! EDIT: ERROR because OVERALL = 1308 cols but WEIGHTED_STD = 1322 cols !!!</span>
+<span class="g g-Whitespace">     </span><span class="mi">16</span> 
+<span class="g g-Whitespace">     </span><span class="mi">17</span> 
+<span class="g g-Whitespace">     </span><span class="mi">18</span> <span class="c1"># Plot the overall scores</span>
+<span class="g g-Whitespace">     </span><span class="mi">19</span> <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Overall Score&quot;</span><span class="p">)</span>
+
+<span class="nn">File /opt/anaconda3/lib/python3.12/site-packages/numpy/ma/core.py:4217,</span> in <span class="ni">MaskedArray.__add__</span><span class="nt">(self, other)</span>
+<span class="g g-Whitespace">   </span><span class="mi">4215</span> <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_delegate_binop</span><span class="p">(</span><span class="n">other</span><span class="p">):</span>
+<span class="g g-Whitespace">   </span><span class="mi">4216</span>     <span class="k">return</span> <span class="bp">NotImplemented</span>
+<span class="ne">-&gt; </span><span class="mi">4217</span> <span class="k">return</span> <span class="n">add</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">)</span>
+
+<span class="nn">File /opt/anaconda3/lib/python3.12/site-packages/numpy/ma/core.py:1020,</span> in <span class="ni">_MaskedBinaryOperation.__call__</span><span class="nt">(self, a, b, *args, **kwargs)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1018</span> <span class="k">with</span> <span class="n">np</span><span class="o">.</span><span class="n">errstate</span><span class="p">():</span>
+<span class="g g-Whitespace">   </span><span class="mi">1019</span>     <span class="n">np</span><span class="o">.</span><span class="n">seterr</span><span class="p">(</span><span class="n">divide</span><span class="o">=</span><span class="s1">&#39;ignore&#39;</span><span class="p">,</span> <span class="n">invalid</span><span class="o">=</span><span class="s1">&#39;ignore&#39;</span><span class="p">)</span>
+<span class="ne">-&gt; </span><span class="mi">1020</span>     <span class="n">result</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">f</span><span class="p">(</span><span class="n">da</span><span class="p">,</span> <span class="n">db</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1021</span> <span class="c1"># Get the mask for the result</span>
+<span class="g g-Whitespace">   </span><span class="mi">1022</span> <span class="p">(</span><span class="n">ma</span><span class="p">,</span> <span class="n">mb</span><span class="p">)</span> <span class="o">=</span> <span class="p">(</span><span class="n">getmask</span><span class="p">(</span><span class="n">a</span><span class="p">),</span> <span class="n">getmask</span><span class="p">(</span><span class="n">b</span><span class="p">))</span>
+
+<span class="ne">ValueError</span>: operands could not be broadcast together with shapes (1319,1322) (1314,1308) 
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="recipe-step-6-rank-the-alternatives">
+<h3>Recipe Step 6: Rank the alternatives<a class="headerlink" href="#recipe-step-6-rank-the-alternatives" title="Permalink to this heading">#</a></h3>
+<p>The final map seems promising, but how are we going to decide which is best? Usually a <strong>ranking method</strong> is performed to get the optimum alternative. Here, since we don’t have a specific number of cells or size of land units to select, we will just rank the cell values so that we can visualize where we have higher score <strong>clusters</strong>.</p>
+<p>The <strong>rankdata()</strong> method from the <strong>SciPy Stats</strong> library will help us do so by assigning ranks to each element within an array or sequence based on its value relative to the other elements. Ranks typically start from 1 for the smallest value, and different ranking methods can be specificied through the <em>method</em> argument. For our EBI data, we will use the <strong>dense</strong> ranking method to assign consecutive ranks without gaps for tied elements.</p>
+<p>This function will return an array of rankings equal to the size of the input array, so we can apply the <strong>reshape()</strong> method afterwards to change the shape or dimensions of an array to match that of our desired overall scores array.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Import the necessary libraries for ranking</span>
+<span class="kn">from</span> <span class="nn">scipy.stats</span> <span class="kn">import</span> <span class="n">rankdata</span>
+
+<span class="c1"># Rank the overall scores using the dense ranking method</span>
+<span class="n">ranked_overall</span> <span class="o">=</span> <span class="n">rankdata</span><span class="p">(</span><span class="n">overall</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="s1">&#39;dense&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">overall</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+
+<span class="c1"># Print the ranked overall scores to see what this new array loos like!</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">ranked_overall</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[   72    67    61 ...    96   101   106]
+ [   74    69    63 ...    99   104   108]
+ [   73    67    62 ...   101   106   110]
+ ...
+ [59650 59934 62568 ...  4918  5036  5194]
+ [59916 60723 61606 ...  4853  5006  5164]
+ [81864 83129 91837 ...  4789  4947  5099]]
+</pre></div>
+</div>
+</div>
+</div>
+<p>The <strong>reshape()</strong> method, which returns a new array, is not to be confused with the <strong>resize()</strong> method, which changes the array itself and does not return anything. Let’s take a look at the difference:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">array</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">list_2d</span><span class="p">)</span>   <span class="c1"># array([[1., 2., 3., 4.], [4., 3., 2., 1.]])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">array</span><span class="p">)</span>
+
+<span class="c1"># Reshape the array to have 4 rows and 2 columns - this will not change the original array</span>
+<span class="n">array_reshaped</span> <span class="o">=</span> <span class="n">array</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">array_reshaped</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">array</span><span class="p">)</span>
+
+<span class="c1"># Resize the array to have 4 rows and 2 columns - this will change the original array</span>
+<span class="n">array</span><span class="o">.</span><span class="n">resize</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">array</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[1. 2. 3. 4.]
+ [4. 3. 2. 1.]]
+[[1. 2.]
+ [3. 4.]
+ [4. 3.]
+ [2. 1.]]
+[[1. 2. 3. 4.]
+ [4. 3. 2. 1.]]
+[[1. 2.]
+ [3. 4.]
+ [4. 3.]
+ [2. 1.]]
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="recipe-step-7-if-you-are-satisfied-well-done">
+<h3>Recipe Step 7: If you are satisfied, well-done!<a class="headerlink" href="#recipe-step-7-if-you-are-satisfied-well-done" title="Permalink to this heading">#</a></h3>
+<p>If this analysis were performed on a vector layer, the output might have been a single feature. In a <strong>raster cell</strong>, you might be interested in multiple cells. In order to perform such analyses, you should start your <strong>exploratory analysis</strong> by observing the best scoring cells. Here, we can see the <strong>highest scoring cells</strong> are located in the right top corner of our study area. Thus, we can focus on the agricultural units located there during the next EBI period.</p>
+</section>
+<section id="exploration">
+<h3>Exploration:<a class="headerlink" href="#exploration" title="Permalink to this heading">#</a></h3>
+<p>Now, it’s your time to explore with different criteria weights to see how things are changing. Try the following weights and compare the outputs. How do the two maps change?</p>
+<p><em>Note: Don’t forget to make sure your weights add up to 1!</em></p>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="Module_1_JS.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Module 1: Spatial Thinking in Decision Making</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="Module_3_JS.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Module 3: Spatial Composite Indicators</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction-to-spatial-decision-making">2.1. Introduction to Spatial Decision Making</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#characteristics-of-multiple-criteria-decision-making">2.2. Characteristics of Multiple Criteria Decision Making</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#spatially-explicit">2.3. Spatially Explicit</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hierarchical-structure-of-a-decision-problem">2.4. Hierarchical Structure of a Decision Problem</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-bike-docking">2.5. Example: Bike Docking</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#one-recipe-to-cook-them-all">2.6. One Recipe to Cook Them All</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hands-on-activity-land-use-suitability-for-conservation-reserve-program">Hands-On Activity: Land Use Suitability for Conservation Reserve  Program</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#recipe-step-1-define-the-set-of-evaluation-criteria">Recipe Step 1: Define the set of evaluation criteria</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#recipe-step-2-standardize-each-criterion-map-layer">Recipe Step 2: Standardize each criterion map layer</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#recipe-step-3-define-the-criterion-weights">Recipe Step 3: Define the criterion weights</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#recipe-step-4-construct-the-weighted-standardized-map-layers">Recipe Step 4: Construct the weighted standardized map layers</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#recipe-step-5-generate-the-overall-scores">Recipe Step 5: Generate the overall scores</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#recipe-step-6-rank-the-alternatives">Recipe Step 6: Rank the alternatives</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#recipe-step-7-if-you-are-satisfied-well-done">Recipe Step 7: If you are satisfied, well-done!</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exploration">Exploration:</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By The Jupyter Book Community
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

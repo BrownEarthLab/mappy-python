@@ -1,0 +1,9 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+chapters:
+- file: Module_1_JS 
+- file: Module_2_JS 
+- file: Module_3_JS 

@@ -1,11 +1,8 @@
-# Welcome to your Jupyter Book
+# Welcome to the Mappy Python Diaries!
 
-This is a small sample book to give you a feel for how book content is
-structured.
-It shows off a few of the major file types, as well as some sample content.
-It does not go in-depth into any particular topic - check out [the Jupyter Book documentation](https://jupyterbook.org) for more information.
+"Mappy Python Diaries" is a living textbook project designed to enhance educational accessibility and interdisciplinary research in Geographic Information Science (GIS) through the use of Open Educational Resources (OER). By leveraging platforms like Jupyter Book and GitHub, the project aims to provide high-quality, cost-free educational materials that promote data fluency and collaborative learning.  The project demonstrates a commitment to collaboration and community engagement, actively involving undergraduate students in the process of updating educational materials. Providing students with hands-on experience in curriculum development and content creation will not only enhance the quality of the educational resources, but also cultivate a culture of knowledge-sharing and mentorship within the academic community.
 
-Check out the content pages bundled with this sample book to see more.
+[Github Repository](https://github.com/BrownEarthLab/mappy-python/tree/main)
 
 ```{tableofcontents}
 ```

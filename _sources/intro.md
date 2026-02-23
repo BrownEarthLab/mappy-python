@@ -4,5 +4,6 @@
 
 [Github Repository](https://github.com/BrownEarthLab/mappy-python/tree/main)
 
+# Table of Contents
 ```{tableofcontents}
 ```

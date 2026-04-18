@@ -398,7 +398,8 @@
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
 <div class="output text_html">
-<video controls width="700" style="display:block;margin:auto;">
+<video controls width="700" style="display:block;margin:auto;
+     width:100%; height:auto;">
  <source src="https://raw.githubusercontent.com/BrownEarthLab/mappy-python/main/mappypython-media/Module2-Video1.mp4" type="video/mp4">
  Your browser does not support the video tag.
 </video>
@@ -432,7 +433,8 @@ Let’s see what the characteristics of multiple criteria decision making are an
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
 <div class="output text_html">
-<video controls width="700" style="display:block;margin:auto;">
+<video controls width="700" style="display:block;margin:auto;
+     width:100%; height:auto;">
  <source src="https://raw.githubusercontent.com/BrownEarthLab/mappy-python/main/mappypython-media//Module2-Video2.mp4" type="video/mp4">
  Your browser does not support the video tag.
 </video>
@@ -501,7 +503,8 @@ These alternatives are evaluated on the basis of multiple criteria. Some of the 
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
 <div class="output text_html">
-<video controls width="700" style="display:block;margin:auto;">
+<video controls width="700" style="display:block;margin:auto;
+     width:100%; height:auto;">
  <source src="https://raw.githubusercontent.com/BrownEarthLab/mappy-python/main/mappypython-media/Module2-Video3.mp4" type="video/mp4">
  Your browser does not support the video tag.
 </video>
@@ -710,49 +713,10 @@ Let’s see what it looks like!</p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">FileNotFoundError</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">8</span><span class="p">],</span> <span class="n">line</span> <span class="mi">2</span>
-<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># Load the Wildlife data from the text file</span>
-<span class="ne">----&gt; </span><span class="mi">2</span> <span class="n">nArray</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">loadtxt</span><span class="p">(</span><span class="s2">&quot;n1.txt&quot;</span><span class="p">,</span> <span class="n">skiprows</span><span class="o">=</span><span class="mi">6</span><span class="p">)</span>
-<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="c1"># Plot the data</span>
-<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Wildlife&quot;</span><span class="p">)</span>
-
-<span class="nn">File /opt/anaconda3/lib/python3.12/site-packages/numpy/lib/npyio.py:1373,</span> in <span class="ni">loadtxt</span><span class="nt">(fname, dtype, comments, delimiter, converters, skiprows, usecols, unpack, ndmin, encoding, max_rows, quotechar, like)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1370</span> <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">delimiter</span><span class="p">,</span> <span class="nb">bytes</span><span class="p">):</span>
-<span class="g g-Whitespace">   </span><span class="mi">1371</span>     <span class="n">delimiter</span> <span class="o">=</span> <span class="n">delimiter</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;latin1&#39;</span><span class="p">)</span>
-<span class="ne">-&gt; </span><span class="mi">1373</span> <span class="n">arr</span> <span class="o">=</span> <span class="n">_read</span><span class="p">(</span><span class="n">fname</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">dtype</span><span class="p">,</span> <span class="n">comment</span><span class="o">=</span><span class="n">comment</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="n">delimiter</span><span class="p">,</span>
-<span class="g g-Whitespace">   </span><span class="mi">1374</span>             <span class="n">converters</span><span class="o">=</span><span class="n">converters</span><span class="p">,</span> <span class="n">skiplines</span><span class="o">=</span><span class="n">skiprows</span><span class="p">,</span> <span class="n">usecols</span><span class="o">=</span><span class="n">usecols</span><span class="p">,</span>
-<span class="g g-Whitespace">   </span><span class="mi">1375</span>             <span class="n">unpack</span><span class="o">=</span><span class="n">unpack</span><span class="p">,</span> <span class="n">ndmin</span><span class="o">=</span><span class="n">ndmin</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="n">encoding</span><span class="p">,</span>
-<span class="g g-Whitespace">   </span><span class="mi">1376</span>             <span class="n">max_rows</span><span class="o">=</span><span class="n">max_rows</span><span class="p">,</span> <span class="n">quote</span><span class="o">=</span><span class="n">quotechar</span><span class="p">)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1378</span> <span class="k">return</span> <span class="n">arr</span>
-
-<span class="nn">File /opt/anaconda3/lib/python3.12/site-packages/numpy/lib/npyio.py:992,</span> in <span class="ni">_read</span><span class="nt">(fname, delimiter, comment, quote, imaginary_unit, usecols, skiplines, max_rows, converters, ndmin, unpack, dtype, encoding)</span>
-<span class="g g-Whitespace">    </span><span class="mi">990</span>     <span class="n">fname</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">fspath</span><span class="p">(</span><span class="n">fname</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">991</span> <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">fname</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span>
-<span class="ne">--&gt; </span><span class="mi">992</span>     <span class="n">fh</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">lib</span><span class="o">.</span><span class="n">_datasource</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">fname</span><span class="p">,</span> <span class="s1">&#39;rt&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="n">encoding</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">993</span>     <span class="k">if</span> <span class="n">encoding</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
-<span class="g g-Whitespace">    </span><span class="mi">994</span>         <span class="n">encoding</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="n">fh</span><span class="p">,</span> <span class="s1">&#39;encoding&#39;</span><span class="p">,</span> <span class="s1">&#39;latin1&#39;</span><span class="p">)</span>
-
-<span class="nn">File /opt/anaconda3/lib/python3.12/site-packages/numpy/lib/_datasource.py:193,</span> in <span class="ni">open</span><span class="nt">(path, mode, destpath, encoding, newline)</span>
-<span class="g g-Whitespace">    </span><span class="mi">156</span><span class="w"> </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="g g-Whitespace">    </span><span class="mi">157</span><span class="sd"> Open `path` with `mode` and return the file object.</span>
-<span class="g g-Whitespace">    </span><span class="mi">158</span><span class="sd"> </span>
-<span class="sd">   (...)</span>
-<span class="g g-Whitespace">    </span><span class="mi">189</span><span class="sd"> </span>
-<span class="g g-Whitespace">    </span><span class="mi">190</span><span class="sd"> &quot;&quot;&quot;</span>
-<span class="g g-Whitespace">    </span><span class="mi">192</span> <span class="n">ds</span> <span class="o">=</span> <span class="n">DataSource</span><span class="p">(</span><span class="n">destpath</span><span class="p">)</span>
-<span class="ne">--&gt; </span><span class="mi">193</span> <span class="k">return</span> <span class="n">ds</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="n">mode</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="n">encoding</span><span class="p">,</span> <span class="n">newline</span><span class="o">=</span><span class="n">newline</span><span class="p">)</span>
-
-<span class="nn">File /opt/anaconda3/lib/python3.12/site-packages/numpy/lib/_datasource.py:533,</span> in <span class="ni">DataSource.open</span><span class="nt">(self, path, mode, encoding, newline)</span>
-<span class="g g-Whitespace">    </span><span class="mi">530</span>     <span class="k">return</span> <span class="n">_file_openers</span><span class="p">[</span><span class="n">ext</span><span class="p">](</span><span class="n">found</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="n">mode</span><span class="p">,</span>
-<span class="g g-Whitespace">    </span><span class="mi">531</span>                               <span class="n">encoding</span><span class="o">=</span><span class="n">encoding</span><span class="p">,</span> <span class="n">newline</span><span class="o">=</span><span class="n">newline</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">532</span> <span class="k">else</span><span class="p">:</span>
-<span class="ne">--&gt; </span><span class="mi">533</span>     <span class="k">raise</span> <span class="ne">FileNotFoundError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">path</span><span class="si">}</span><span class="s2"> not found.&quot;</span><span class="p">)</span>
-
-<span class="ne">FileNotFoundError</span>: n1.txt not found.
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.image.AxesImage at 0x11b6bfe60&gt;
 </pre></div>
 </div>
+<img alt="_images/7a2fe7582760f9183689e832dc1df2e52de4c68411a8718ccac980261774d648.png" src="_images/7a2fe7582760f9183689e832dc1df2e52de4c68411a8718ccac980261774d648.png" />
 </div>
 </div>
 <p>Let’s check the Air Quality layer as well. We can change the file name to <em>n5.txt</em> to do so.</p>
@@ -768,7 +732,7 @@ Let’s see what it looks like!</p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.image.AxesImage at 0x1329a6bd0&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.image.AxesImage at 0x11d47b3e0&gt;
 </pre></div>
 </div>
 <img alt="_images/d881b782368308c6a8300357f47fe53b1115a7371f9ac0676d6fccfdb65bf24e.png" src="_images/d881b782368308c6a8300357f47fe53b1115a7371f9ac0676d6fccfdb65bf24e.png" />
@@ -967,10 +931,18 @@ New maximum is:  48
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Maximum of 1st criterion is: 42.052 and minimum of 1st criterion is: 12.826
-Maximum of 2th criterion is: 60.0 and minimum of 2th criterion is: 5.0
-Maximum of 3th criterion is: 100.0 and minimum of 3th criterion is: 0.0
-Maximum of 4th criterion is: 22.253 and minimum of 4th criterion is: 1.116
-Maximum of 5th criterion is: 45.0 and minimum of 5th criterion is: 0.0
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Maximum of 2th criterion is: 60.0 and minimum of 2th criterion is: 5.0
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Maximum of 3th criterion is: 100.0 and minimum of 3th criterion is: 0.0
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Maximum of 4th criterion is: 22.253 and minimum of 4th criterion is: 1.116
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Maximum of 5th criterion is: 45.0 and minimum of 5th criterion is: 0.0
 </pre></div>
 </div>
 </div>
@@ -1044,10 +1016,18 @@ If we need to **maximize** the criterion: take the difference between the cell v
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Standardized maximum is: 1.0 and standardized minimum is: 0.0
-Standardized maximum is: 1.0 and standardized minimum is: 0.0
-Standardized maximum is: 1.0 and standardized minimum is: 0.0
-Standardized maximum is: 1.0 and standardized minimum is: 0.0
-Standardized maximum is: 1.0 and standardized minimum is: 0.0
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Standardized maximum is: 1.0 and standardized minimum is: 0.0
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Standardized maximum is: 1.0 and standardized minimum is: 0.0
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Standardized maximum is: 1.0 and standardized minimum is: 0.0
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Standardized maximum is: 1.0 and standardized minimum is: 0.0
 </pre></div>
 </div>
 </div>
@@ -1170,33 +1150,10 @@ Standardized maximum is: 1.0 and standardized minimum is: 0.0
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">ValueError</span><span class="g g-Whitespace">                                </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">23</span><span class="p">],</span> <span class="n">line</span> <span class="mi">12</span>
-<span class="g g-Whitespace">      </span><span class="mi">9</span>     <span class="n">c</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ma</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">c</span><span class="p">,</span> <span class="n">mask</span><span class="o">=</span><span class="p">(</span><span class="n">c</span><span class="o">==-</span><span class="mi">9999</span><span class="p">))</span>
-<span class="g g-Whitespace">     </span><span class="mi">10</span>     <span class="n">weighted_std</span> <span class="o">=</span> <span class="n">weight_list</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="n">c</span>
-<span class="ne">---&gt; </span><span class="mi">12</span>     <span class="n">overall</span> <span class="o">=</span> <span class="n">weighted_std</span> <span class="o">+</span> <span class="n">overall</span>
-<span class="g g-Whitespace">     </span><span class="mi">15</span>     <span class="c1"># !!! EDIT: ERROR because OVERALL = 1308 cols but WEIGHTED_STD = 1322 cols !!!</span>
-<span class="g g-Whitespace">     </span><span class="mi">16</span> 
-<span class="g g-Whitespace">     </span><span class="mi">17</span> 
-<span class="g g-Whitespace">     </span><span class="mi">18</span> <span class="c1"># Plot the overall scores</span>
-<span class="g g-Whitespace">     </span><span class="mi">19</span> <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Overall Score&quot;</span><span class="p">)</span>
-
-<span class="nn">File /opt/anaconda3/lib/python3.12/site-packages/numpy/ma/core.py:4217,</span> in <span class="ni">MaskedArray.__add__</span><span class="nt">(self, other)</span>
-<span class="g g-Whitespace">   </span><span class="mi">4215</span> <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_delegate_binop</span><span class="p">(</span><span class="n">other</span><span class="p">):</span>
-<span class="g g-Whitespace">   </span><span class="mi">4216</span>     <span class="k">return</span> <span class="bp">NotImplemented</span>
-<span class="ne">-&gt; </span><span class="mi">4217</span> <span class="k">return</span> <span class="n">add</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">)</span>
-
-<span class="nn">File /opt/anaconda3/lib/python3.12/site-packages/numpy/ma/core.py:1020,</span> in <span class="ni">_MaskedBinaryOperation.__call__</span><span class="nt">(self, a, b, *args, **kwargs)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1018</span> <span class="k">with</span> <span class="n">np</span><span class="o">.</span><span class="n">errstate</span><span class="p">():</span>
-<span class="g g-Whitespace">   </span><span class="mi">1019</span>     <span class="n">np</span><span class="o">.</span><span class="n">seterr</span><span class="p">(</span><span class="n">divide</span><span class="o">=</span><span class="s1">&#39;ignore&#39;</span><span class="p">,</span> <span class="n">invalid</span><span class="o">=</span><span class="s1">&#39;ignore&#39;</span><span class="p">)</span>
-<span class="ne">-&gt; </span><span class="mi">1020</span>     <span class="n">result</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">f</span><span class="p">(</span><span class="n">da</span><span class="p">,</span> <span class="n">db</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1021</span> <span class="c1"># Get the mask for the result</span>
-<span class="g g-Whitespace">   </span><span class="mi">1022</span> <span class="p">(</span><span class="n">ma</span><span class="p">,</span> <span class="n">mb</span><span class="p">)</span> <span class="o">=</span> <span class="p">(</span><span class="n">getmask</span><span class="p">(</span><span class="n">a</span><span class="p">),</span> <span class="n">getmask</span><span class="p">(</span><span class="n">b</span><span class="p">))</span>
-
-<span class="ne">ValueError</span>: operands could not be broadcast together with shapes (1319,1322) (1314,1308) 
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.image.AxesImage at 0x11d4bbb30&gt;
 </pre></div>
 </div>
+<img alt="_images/619733b258a08fc48fa9ece4e7d54ec507df71f66d2ba8ab39b1346193756f0e.png" src="_images/619733b258a08fc48fa9ece4e7d54ec507df71f66d2ba8ab39b1346193756f0e.png" />
 </div>
 </div>
 </section>
@@ -1219,13 +1176,13 @@ Standardized maximum is: 1.0 and standardized minimum is: 0.0
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[   72    67    61 ...    96   101   106]
- [   74    69    63 ...    99   104   108]
- [   73    67    62 ...   101   106   110]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[ 41140  41140  41140 ...  41140  41140  41140]
+ [ 41140  41140  41140 ...  41140  41140  41140]
+ [ 41140  41140  41140 ...  41140  41140  41140]
  ...
- [59650 59934 62568 ...  4918  5036  5194]
- [59916 60723 61606 ...  4853  5006  5164]
- [81864 83129 91837 ...  4789  4947  5099]]
+ [ 72381  72736  77859 ...  41140  41140  41140]
+ [ 73184  73687  75714 ...  41140  41140  41140]
+ [129899 131210 152190 ...  41140  41140  41140]]
 </pre></div>
 </div>
 </div>

@@ -10,7 +10,7 @@ Check out our [Github Repository](https://github.com/BrownEarthLab/mappy-python/
 
 ## About the Authors
 ### Seda Şalap-Ayça, PhD
-<img src="profile-SSA.png" width=150 style="float: left; margin-right:10px;"> 
+<img src="profile-SSA.png" width=200 style="float: left; margin-right:10px;"> 
 
 *Department of Earth, Environmental & Planetary Sciences; Institute at Brown for Environment & Society, Brown University, Providence, Rhode Island, USA* <br>
 **Research Profile:** [Researchers@Brown](https://vivo.brown.edu/display/ssalapay) <br> 
@@ -23,7 +23,7 @@ Dr. Seda Şalap-Ayça is an Assistant Professor of Practice at the Brown Univers
 <br>
 
 ### Julien Song, ScB
-<img src="profile-JS.png" width=150 style="float: left; margin-right:10px;"> 
+<img src="profile-JS.png" width=200 style="float: left; margin-right:10px;"> 
 
 *Department of Biology & Medicine; Data Science Institute, Brown University, Providence, Rhode Island, USA* <br>
 **ORCID iD:** [0009-0000-3022-5057](https://orcid.org/0009-0000-3022-5057) <br>
@@ -35,7 +35,7 @@ Julien Song is an undergraduate student at Brown University (Class of 2026) purs
 <br>
 
 ### Ayushman Choudhury, ScB
-<img src="profile-AC.png" width=150 height=150 style="float: left; margin-right:10px;"> 
+<img src="profile-AC.png" width=200 style="float: left; margin-right:10px;"> 
 
 *Division of Applied Mathematics; Department of Computer Science; Department of Music, Brown University, Providence, Rhode Island, USA* <br>
 **LinkedIn:** [ayushman-choudhury](https://www.linkedin.com/in/ayushman-choudhury/) <br>

@@ -19,7 +19,6 @@ Check out our [Github Repository](https://github.com/BrownEarthLab/mappy-python/
 **Email:** [seda_salapayca@brown.edu](seda_salapayca@brown.edu) <br>
 
 Dr. Seda Şalap-Ayça is an Assistant Professor of Practice at the Brown University Department of Earth, Environmental and Planetary Sciences (DEEPS) and Institute at Brown for Environment and Society (IBES). She is a GIScientist passionate about solving spatial decision making problems and understanding the role of uncertainty in spatial models, particularly for human-environment interactions. She did her Ph.D. in Geography in a joint doctoral program between UC Santa Barbara and San Diego State University. As a Ph.D. Student, she focused on spatially explicit uncertainty and sensitivity analysis methods for land use models. As a researcher and educator at University of Massachusetts Amherst, she has taught an array of GIS courses at various levels. At Brown University, she is eager to engage with diverse minds and continue to work with her colleagues on the complexities of human-environment dynamics.
-
 <br>
 
 ### Julien Song, ScB
@@ -31,7 +30,6 @@ Dr. Seda Şalap-Ayça is an Assistant Professor of Practice at the Brown Univers
 **Email:** [julien_song@brown.edu](julien_song@brown.edu) <br>
 
 Julien Song is an undergraduate student at Brown University (Class of 2026) pursuing a Bachelor of Science in Biology with Honors on the Biomedical Informatics track and a Certificate in Data Fluency. She is passionate about the intersection between biology, data science, and the arts, with a conscious for the environment and education accessibility. She is an incoming candidate for the Master of Science in Health Informatics at Brown University and aspires to study digital education and health information systems to advance translational science and ameliorate population health.
-
 <br>
 
 ### Ayushman Choudhury, ScB
@@ -42,7 +40,6 @@ Julien Song is an undergraduate student at Brown University (Class of 2026) purs
 **Email:** [ayushman_choudhury@brown.edu](ayushman_choudhury@brown.edu) <br>
 
 Ayushman Choudhury studied Applied Mathematics-Computer Science and Music at Brown University (Class of 2025) and is now a PhD Student in the Department of Geophysical Sciences at the University of Chicago. He is a math enthusiast with a deep fascination for numerical and computational puzzles. He aspires to study the mathematics of climate change and work towards interdisciplinary solutions to mitigate its effects.
-
 <br>
 
 ## Acknowledgements

@@ -2,7 +2,7 @@
 # Learn more at https://jupyterbook.org/customize/config.html
 
 title: Mappy Python Diaries
-author: Julien Song, Seda Şalap-Ayça
+author: Julien Song (ScB), Seda Şalap-Ayça (PhD)
 logo: logo.png
 
 # Force re-execution of notebooks on each build.

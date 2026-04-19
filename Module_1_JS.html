@@ -852,24 +852,13 @@ Find the proximity of schools to your house! The script should calculate and sor
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">FileNotFoundError</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">21</span><span class="p">],</span> <span class="n">line</span> <span class="mi">2</span>
-<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># Read in the text file containing city data, line by line</span>
-<span class="ne">----&gt; </span><span class="mi">2</span> <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;cities.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">:</span>
-<span class="g g-Whitespace">      </span><span class="mi">3</span>     <span class="n">lines</span> <span class="o">=</span> <span class="n">file</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span>   
-<span class="g g-Whitespace">      </span><span class="mi">4</span>     <span class="n">file</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Seattle 3 26
 
-<span class="nn">File /opt/anaconda3/lib/python3.12/site-packages/IPython/core/interactiveshell.py:324,</span> in <span class="ni">_modified_open</span><span class="nt">(file, *args, **kwargs)</span>
-<span class="g g-Whitespace">    </span><span class="mi">317</span> <span class="k">if</span> <span class="n">file</span> <span class="ow">in</span> <span class="p">{</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">}:</span>
-<span class="g g-Whitespace">    </span><span class="mi">318</span>     <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span>
-<span class="g g-Whitespace">    </span><span class="mi">319</span>         <span class="sa">f</span><span class="s2">&quot;IPython won&#39;t let you open fd=</span><span class="si">{</span><span class="n">file</span><span class="si">}</span><span class="s2"> by default &quot;</span>
-<span class="g g-Whitespace">    </span><span class="mi">320</span>         <span class="s2">&quot;as it is likely to crash IPython. If you know what you are doing, &quot;</span>
-<span class="g g-Whitespace">    </span><span class="mi">321</span>         <span class="s2">&quot;you can use builtins&#39; open.&quot;</span>
-<span class="g g-Whitespace">    </span><span class="mi">322</span>     <span class="p">)</span>
-<span class="ne">--&gt; </span><span class="mi">324</span> <span class="k">return</span> <span class="n">io_open</span><span class="p">(</span><span class="n">file</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+Las_Vegas 11 10
 
-<span class="ne">FileNotFoundError</span>: [Errno 2] No such file or directory: &#39;cities.txt&#39;
+Los_Angeles 4 8
+
+San_Diego 7 5
 </pre></div>
 </div>
 </div>
@@ -877,28 +866,60 @@ Find the proximity of schools to your house! The script should calculate and sor
 <p>Each line in <em>cities.txt</em> file contains a city name, it’s x-coordinate, and it’s y-coordinate as a text <strong>string</strong>. We can extract the different data values by isolating each word in the string. The <strong>strip()</strong> method methods removes whitespaces from a string, and the <strong>split()</strong> method splits the string into a list of the words.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># See how data is extracted from each line</span>
-<span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">:</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Let&#39;s see how split() and strip() work:</span>
 
-    <span class="c1"># Strip line of whitespaces </span>
-    <span class="n">line_stripped</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">line_stripped</span><span class="p">)</span>
+<span class="n">example_string</span> <span class="o">=</span> <span class="s2">&quot;  This is a string in Python &quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">example_string</span><span class="p">)</span>
 
-    <span class="c1"># Split the stripped line into a list of words</span>
-    <span class="n">line_split</span> <span class="o">=</span> <span class="n">line_stripped</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">line_split</span><span class="p">)</span>
+<span class="n">stripped_string</span> <span class="o">=</span> <span class="n">example_string</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">stripped_string</span><span class="p">)</span>
+
+<span class="n">string_list</span> <span class="o">=</span> <span class="n">stripped_string</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">string_list</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Seattle 3 26
-[&#39;Seattle&#39;, &#39;3&#39;, &#39;26&#39;]
-Las_Vegas 11 10
-[&#39;Las_Vegas&#39;, &#39;11&#39;, &#39;10&#39;]
-Los_Angeles 4 8
-[&#39;Los_Angeles&#39;, &#39;4&#39;, &#39;8&#39;]
-San_Diego 7 5
-[&#39;San_Diego&#39;, &#39;7&#39;, &#39;5&#39;]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  This is a string in Python 
+This is a string in Python
+[&#39;This&#39;, &#39;is&#39;, &#39;a&#39;, &#39;string&#39;, &#39;in&#39;, &#39;Python&#39;]
+</pre></div>
+</div>
+</div>
+</div>
+<p>Now let’s see how <strong>strip()</strong> and <strong>split()</strong> can be used for each line in  <em>cities.txt</em>:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># See how data is extracted from each line</span>
+<span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;line: </span><span class="si">{</span><span class="n">line</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+    <span class="c1"># Strip line of whitespaces </span>
+    <span class="n">line_stripped</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;stripped: </span><span class="si">{</span><span class="n">line_stripped</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+    <span class="c1"># Split the stripped line into a list of words</span>
+    <span class="n">line_split</span> <span class="o">=</span> <span class="n">line_stripped</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;split: </span><span class="si">{</span><span class="n">line_split</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>line: Seattle 3 26
+
+stripped: Seattle 3 26
+split: [&#39;Seattle&#39;, &#39;3&#39;, &#39;26&#39;]
+line: Las_Vegas 11 10
+
+stripped: Las_Vegas 11 10
+split: [&#39;Las_Vegas&#39;, &#39;11&#39;, &#39;10&#39;]
+line: Los_Angeles 4 8
+
+stripped: Los_Angeles 4 8
+split: [&#39;Los_Angeles&#39;, &#39;4&#39;, &#39;8&#39;]
+line: San_Diego 7 5
+stripped: San_Diego 7 5
+split: [&#39;San_Diego&#39;, &#39;7&#39;, &#39;5&#39;]
 </pre></div>
 </div>
 </div>
@@ -1085,7 +1106,7 @@ The distance between San_Diego and San_Diego is 0.00 units.
   <div class="footer-item">
     
 <p class="component-author">
-By Julien Song, Seda Şalap-Ayça
+By Julien Song (ScB), Seda Şalap-Ayça (PhD)
 </p>
 
   </div>

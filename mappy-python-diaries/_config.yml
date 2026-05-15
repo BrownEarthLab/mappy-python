@@ -33,7 +33,7 @@ launch_buttons:
   colab_url: "https://colab.research.google.com"
   binderhub_url: "https://mybinder.org"
   notebook_interface: "jupyterlab" # Optional: "classic" or "jupyterlab"
-  # thebe: true  # Enables in-page execution (Live Code)
+  thebe: true  # Enables in-page execution (Live Code)
 
 html:
   extra_footer: |

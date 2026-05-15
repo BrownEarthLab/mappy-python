@@ -224,6 +224,55 @@
 
 
 
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://mybinder.org/v2/git/https%3A//github.com/BrownEarthLab/mappy-python/tree/main/master?urlpath=lab/tree/docs/Module_2_JS.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch on Binder"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img alt="Binder logo" src="_static/images/logo_binder.svg">
+  </span>
+<span class="btn__text-container">Binder</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://colab.research.google.com/github/tree/main/blob/master/docs/Module_2_JS.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch on Colab"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img alt="Colab logo" src="_static/images/logo_colab.png">
+  </span>
+<span class="btn__text-container">Colab</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
 <div class="dropdown dropdown-source-buttons">
   <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
     <i class="fab fa-github"></i>
@@ -398,7 +447,7 @@
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
 <div class="output text_html">
-<video controls width="700" style="display:block;margin:auto;
+<video controls aria-label="Video introduction to spatial decision making and multiple criteria decision making." title="Video introduction to spatial decision making and multiple criteria decision making." width="700" style="display:block;margin:auto;
      width:100%; height:auto;">
  <source src="https://raw.githubusercontent.com/BrownEarthLab/mappy-python/main/mappypython-media/Module2-Video1.mp4" type="video/mp4">
  Your browser does not support the video tag.
@@ -415,7 +464,7 @@ Let’s see what the characteristics of multiple criteria decision making are an
 <section id="characteristics-of-multiple-criteria-decision-making">
 <h2>2.2. Characteristics of Multiple Criteria Decision Making<a class="headerlink" href="#characteristics-of-multiple-criteria-decision-making" title="Permalink to this heading">#</a></h2>
 <p>The roots of <strong>multiple criteria decision making</strong> can be traced back to the 18th century, although it wasn’t spatial back then! It is used to combine conflicting criteria into a single score.</p>
-<img src="https://raw.githubusercontent.com/BrownEarthLab/mappy-python/main/mappypython-media/Module2-Figure2.2.png" style="float: right; width: 35%; height: auto; margin-left: 10px;">
+<img alt="Lined paper divided into pro and con columns for comparing arguments in a decision." src="https://raw.githubusercontent.com/BrownEarthLab/mappy-python/main/mappypython-media/Module2-Figure2.2.png" style="float: right; width: 35%; height: auto; margin-left: 10px;">
 <p>Benjamin Franklin used a simple paper system (<em>pro et contra</em> Latin for “for and against”) for deciding important issues; pros on one side and cons against on the other. By striking out the arguments on each side with the same ranking, he determined the remaining arguments to be supported. Therefore, each decision making–whether spatial or not–needs a weighing mechanism.</p>
 </section>
 <section id="spatially-explicit">
@@ -433,7 +482,7 @@ Let’s see what the characteristics of multiple criteria decision making are an
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
 <div class="output text_html">
-<video controls width="700" style="display:block;margin:auto;
+<video controls aria-label="Video explaining spatially explicit decision problems." title="Video explaining spatially explicit decision problems." width="700" style="display:block;margin:auto;
      width:100%; height:auto;">
  <source src="https://raw.githubusercontent.com/BrownEarthLab/mappy-python/main/mappypython-media//Module2-Video2.mp4" type="video/mp4">
  Your browser does not support the video tag.
@@ -444,14 +493,14 @@ Let’s see what the characteristics of multiple criteria decision making are an
 <section id="hierarchical-structure-of-a-decision-problem">
 <h2>2.4. Hierarchical Structure of a Decision Problem<a class="headerlink" href="#hierarchical-structure-of-a-decision-problem" title="Permalink to this heading">#</a></h2>
 <p>When we try to make our spatial decisions, we first need to identify our goal(s). A <strong>decision goal</strong> specifies one or more objectives to achieve, such as the number of sites or regions to be selected. The goal also defines the phenomenon that is going to be modeled.  Finally, our goal also identifies the purpose of spatial analysis.</p>
-<img src="https://raw.githubusercontent.com/BrownEarthLab/mappy-python/main/mappypython-media/Module2-Figure2.4.png" style="float: right; width: 40%; height: auto; margin-left: 10px;">
+<img alt="Hierarchy diagram showing a goal branching to two objectives and three attributes." src="https://raw.githubusercontent.com/BrownEarthLab/mappy-python/main/mappypython-media/Module2-Figure2.4.png" style="float: right; width: 40%; height: auto; margin-left: 10px;">
 Some examples of spatial decision making goals are identifying the best site for a hazardous waste disposal facility, finding the shortest transportation route, and the best spatial pattern for an animal habitat.
 <p>As seen in figure, each objective is connected with several attributes (criteria).</p>
 </section>
 <section id="example-bike-docking">
 <h2>2.5. Example: Bike Docking<a class="headerlink" href="#example-bike-docking" title="Permalink to this heading">#</a></h2>
 <p>Let’s assume the Boston municipality decided to contribute to green transportation and increase the accessibility for the public. They have 100 possible locations over the city and the outcome of this decision process can support five more ranking locations.  However, the Metropolitan Transportation Authority is not sure which one is the best decision!</p>
-<img src="https://raw.githubusercontent.com/BrownEarthLab/mappy-python/main/mappypython-media/Module2-Figure2.5.png" style="float: right; width: 50%; height: auto; margin-left: 10px;">
+<img alt="Row of bike-share bicycles docked along an urban sidewalk." src="https://raw.githubusercontent.com/BrownEarthLab/mappy-python/main/mappypython-media/Module2-Figure2.5.png" style="float: right; width: 50%; height: auto; margin-left: 10px;">
 <p>In this hypothetical example, can you specify the phenomenon and purpose of the analysis?</p>
 <p>In this example:</p>
 <ul class="simple">
@@ -503,7 +552,7 @@ These alternatives are evaluated on the basis of multiple criteria. Some of the 
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
 <div class="output text_html">
-<video controls width="700" style="display:block;margin:auto;
+<video controls aria-label="Video introducing the spatial decision-making recipe." title="Video introducing the spatial decision-making recipe." width="700" style="display:block;margin:auto;
      width:100%; height:auto;">
  <source src="https://raw.githubusercontent.com/BrownEarthLab/mappy-python/main/mappypython-media/Module2-Video3.mp4" type="video/mp4">
  Your browser does not support the video tag.
@@ -533,7 +582,7 @@ These alternatives are evaluated on the basis of multiple criteria. Some of the 
 <h2>Hands-On Activity: Land Use Suitability for Conservation Reserve  Program<a class="headerlink" href="#hands-on-activity-land-use-suitability-for-conservation-reserve-program" title="Permalink to this heading">#</a></h2>
 <p>Let’s look at a land use suitability example taken from <a class="reference external" href="https://link.springer.com/article/10.1007/s00477-018-1535-z">Şalap-Ayça and Jankowski (2008)</a>.</p>
 <p>In the United States, the Conservation Reserve Program (CRP) executes land use evaluation and improves conservation by renting highly erodible cropland or other environmentally sensitive acreage from farmers and ensuring plantation of species that will improve environmental quality.
-<img src="https://raw.githubusercontent.com/BrownEarthLab/mappy-python/main/mappypython-media/Module2-Figure2.HOA.png" style="float: right; width: 40%; height: auto; margin-left: 10px;"></p>
+<img alt="Icons representing Environmental Benefit Index factors: wildlife, water quality, erosion, enduring benefits, and air quality." src="https://raw.githubusercontent.com/BrownEarthLab/mappy-python/main/mappypython-media/Module2-Figure2.HOA.png" style="float: right; width: 40%; height: auto; margin-left: 10px;"></p>
 <p>CRP is achieved by a score based system called the <strong>Environmental Benefit Index (EBI)</strong>. It is based on five environmental factors: wildlife, water quality, erosion, enduring benefits, and air quality. Every factor has varying levels of preferences.</p>
 <p>Decision makers come up with different <strong>preferences</strong> for each criteria and combine them into a single overall score. When the overall score has higher ranks for the predetermined threshold value for the enrollment period, the land unit is left uncultivated for that term. Even though the benefits of CRP have been observed for over 30 years, unfortunately, only the most qualified land units are selected for incentive payments due to fiscal limitations.</p>
 <p>Therefore, the overall objective becomes to define the most qualified areas that will maximize the conservation benefits by considering the multiple factors together with their varying preferences; this makes the EBI a typical example of a multi-criteria decision-making problem.</p>
@@ -713,10 +762,10 @@ Let’s see what it looks like!</p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.image.AxesImage at 0x1117f9d90&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.image.AxesImage at 0x108eb68a0&gt;
 </pre></div>
 </div>
-<img alt="_images/7a2fe7582760f9183689e832dc1df2e52de4c68411a8718ccac980261774d648.png" src="_images/7a2fe7582760f9183689e832dc1df2e52de4c68411a8718ccac980261774d648.png" />
+<img alt="Wildlife criterion raster map showing spatial variation across the study area." src="_images/7a2fe7582760f9183689e832dc1df2e52de4c68411a8718ccac980261774d648.png" />
 </div>
 </div>
 <p>Let’s check the Air Quality layer as well. We can change the file name to <em>n5.txt</em> to do so.</p>
@@ -732,10 +781,10 @@ Let’s see what it looks like!</p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.image.AxesImage at 0x12293dcd0&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.image.AxesImage at 0x11bddad80&gt;
 </pre></div>
 </div>
-<img alt="_images/d881b782368308c6a8300357f47fe53b1115a7371f9ac0676d6fccfdb65bf24e.png" src="_images/d881b782368308c6a8300357f47fe53b1115a7371f9ac0676d6fccfdb65bf24e.png" />
+<img alt="Air quality criterion raster map with mostly high values and scattered low-value areas across the study area." src="_images/d881b782368308c6a8300357f47fe53b1115a7371f9ac0676d6fccfdb65bf24e.png" />
 </div>
 </div>
 <p>Great! Now we have an understanding of what our criteria layers look like. Let’s move to the next step of standardization!</p>
@@ -1150,10 +1199,10 @@ If we need to **maximize** the criterion: take the difference between the cell v
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.image.AxesImage at 0x1229fe3c0&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.image.AxesImage at 0x11da4ed50&gt;
 </pre></div>
 </div>
-<img alt="_images/619733b258a08fc48fa9ece4e7d54ec507df71f66d2ba8ab39b1346193756f0e.png" src="_images/619733b258a08fc48fa9ece4e7d54ec507df71f66d2ba8ab39b1346193756f0e.png" />
+<img alt="Overall suitability score raster map combining criteria across the study area." src="_images/619733b258a08fc48fa9ece4e7d54ec507df71f66d2ba8ab39b1346193756f0e.png" />
 </div>
 </div>
 </section>
@@ -1176,13 +1225,13 @@ If we need to **maximize** the criterion: take the difference between the cell v
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[ 41140  41140  41140 ...  41140  41140  41140]
- [ 41140  41140  41140 ...  41140  41140  41140]
- [ 41140  41140  41140 ...  41140  41140  41140]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[ 41189  41189  41189 ...  41189  41189  41189]
+ [ 41189  41189  41189 ...  41189  41189  41189]
+ [ 41189  41189  41189 ...  41189  41189  41189]
  ...
- [ 72381  72736  77859 ...  41140  41140  41140]
- [ 73184  73687  75714 ...  41140  41140  41140]
- [129899 131210 152190 ...  41140  41140  41140]]
+ [ 72433  72788  77910 ...  41189  41189  41189]
+ [ 73237  73740  75767 ...  41189  41189  41189]
+ [129944 131254 152227 ...  41189  41189  41189]]
 </pre></div>
 </div>
 </div>
@@ -1353,6 +1402,10 @@ By Julien Song (ScB), Seda Şalap-Ayça (PhD)
   
   <div class="footer-item">
     
+<div class="extra_footer">
+  <a href="https://brownearthlab.github.io/mappy-python/intro.html">Mappy Python Diaries</a> © 2024 by <a href="https://vivo.brown.edu/display/ssalapay">Julien Song, Seda Şalap-Ayça</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="Creative Commons license icon." style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="Creative Commons attribution icon." style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="Creative Commons noncommercial icon." style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/nd.svg" alt="Creative Commons no derivatives icon." style="max-width: 1em;max-height:1em;margin-left: .2em;">
+
+</div>
   </div>
   
 </div>

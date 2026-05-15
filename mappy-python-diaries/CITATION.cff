@@ -1,0 +1,42 @@
+cff-version: 1.2.0
+message: "If you use this Jupyter Book, please cite it using the preferred citation metadata."
+type: dataset
+title: "Mappy Python Diaries"
+authors:
+  - family-names: "Song"
+    given-names: "Julien"
+    orcid: "https://orcid.org/0009-0000-3022-5057"
+    affiliation: "Brown University"
+  - family-names: "Choudhury"
+    given-names: "Ayushman"
+    affiliation: "University of Chicago"
+  - family-names: "Şalap-Ayça"
+    given-names: "Seda"
+    orcid: "https://orcid.org/0000-0002-5788-9563"
+    affiliation: "Brown University"
+abstract: "A living textbook project designed to enhance educational accessibility and interdisciplinary research in Geographic Information Science through Open Educational Resources."
+keywords:
+  - "Geographic Information Science"
+  - "GIS"
+  - "Jupyter Book"
+  - "Open Educational Resources"
+license: "CC-BY-NC-ND-4.0"
+repository-code: "https://github.com/BrownEarthLab/mappy-python"
+url: "https://brownearthlab.github.io/mappy-python/intro.html"
+preferred-citation:
+  type: book
+  title: "Mappy Python Diaries"
+  authors:
+    - family-names: "Song"
+      given-names: "Julien"
+      orcid: "https://orcid.org/0009-0000-3022-5057"
+      affiliation: "Brown University"
+    - family-names: "Choudhury"
+      given-names: "Ayushman"
+      affiliation: "University of Chicago"
+    - family-names: "Şalap-Ayça"
+      given-names: "Seda"
+      orcid: "https://orcid.org/0000-0002-5788-9563"
+      affiliation: "Brown University"
+  year: 2024
+  url: "https://brownearthlab.github.io/mappy-python/intro.html"

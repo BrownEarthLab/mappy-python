@@ -42,5 +42,8 @@ Julien Song is an undergraduate student at Brown University (Class of 2026) purs
 Ayushman Choudhury studied Applied Mathematics-Computer Science and Music at Brown University (Class of 2025) and is now a PhD Student in the Department of Geophysical Sciences at the University of Chicago. He is a math enthusiast with a deep fascination for numerical and computational puzzles. He aspires to study the mathematics of climate change and work towards interdisciplinary solutions to mitigate its effects.
 <br>
 
+## How to Cite
+Song, J., A. Choudhury, and S. Şalap-Ayça. 2024. Mappy Python Diaries. *Mappy Python Diaries*. https://brownearthlab.github.io/mappy-python/intro.html. 
+
 ## Acknowledgements
-*Mappy Python Diaries* was supported by the one of the nine Data Science Seed Grants (FY2025) funded by the Data Science Institute at Brown University, Providence, Rhode Island, USA.
+*Mappy Python Diaries* © 2024 was supported by the one of the nine Data Science Seed Grants (FY2025) funded by the Data Science Institute at Brown University, Providence, Rhode Island, USA. Work is licensed under [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International](https://creativecommons.org/licenses/by-nc-nd/4.0/).

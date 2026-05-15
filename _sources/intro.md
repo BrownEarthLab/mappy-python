@@ -5,8 +5,98 @@
 Check out our [Github Repository](https://github.com/BrownEarthLab/mappy-python/tree/main) for more details!
 
 ## Table of Contents
-```{tableofcontents}
+<!-- ```{tableofcontents}
+``` -->
+
+::::::{grid} 1 1 1 1
+:gutter: 2
+
+:::::{grid-item-card}
+:link: Module_1_JS
+:link-type: doc
+:class-card: sd-shadow-sm sd-card-hover
+
+::::{grid}
+:gutter: 2
+:margin: 0
+
+:::{grid-item}
+:columns: 3 3 2 2
+:child-align: center
+
+```{image} mod1.svg
+:height: 80px
+:align: center
 ```
+:::
+
+:::{grid-item}
+:columns: 9 9 10 10
+:child-align: center
+
+**Module 1: Spatial Thinking in Decision Making**
+:::
+::::
+:::::
+
+:::::{grid-item-card}
+:link: Module_2_JS
+:link-type: doc
+:class-card: sd-shadow-sm sd-card-hover
+
+::::{grid}
+:gutter: 2
+:margin: 0
+
+:::{grid-item}
+:columns: 3 3 2 2
+:child-align: center
+
+```{image} mod2-1.jpg
+:height: 80px
+:align: center
+```
+:::
+
+:::{grid-item}
+:columns: 9 9 10 10
+:child-align: center
+
+**Module 2: Spatial Decision Making**
+:::
+::::
+:::::
+
+:::::{grid-item-card}
+:link: Module_3_JS
+:link-type: doc
+:class-card: sd-shadow-sm sd-card-hover
+
+::::{grid}
+:gutter: 2
+:margin: 0
+
+:::{grid-item}
+:columns: 3 3 2 2
+:child-align: center
+
+```{image} mod3.png
+:height: 80px
+:align: center
+```
+:::
+
+:::{grid-item}
+:columns: 9 9 10 10
+:child-align: center
+
+**Module 3: Spatial Composite Indicators**
+:::
+::::
+:::::
+::::::
+
+
 
 ## About the Authors
 ### Seda Şalap-Ayça, PhD

@@ -23,6 +23,7 @@ keywords:
 license: "CC-BY-NC-ND-4.0"
 repository-code: "https://github.com/BrownEarthLab/mappy-python"
 url: "https://brownearthlab.github.io/mappy-python/intro.html"
+doi: "10.5281/zenodo.10418788"
 preferred-citation:
   type: book
   title: "Mappy Python Diaries"
@@ -40,3 +41,4 @@ preferred-citation:
       affiliation: "Brown University"
   year: 2024
   url: "https://brownearthlab.github.io/mappy-python/intro.html"
+  doi: "10.5281/zenodo.10418788"

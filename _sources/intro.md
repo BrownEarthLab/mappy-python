@@ -133,7 +133,7 @@ Ayushman Choudhury studied Applied Mathematics-Computer Science and Music at Bro
 <br>
 
 ## How to Cite
-Song, J., A. Choudhury, and S. Şalap-Ayça. 2024. Mappy Python Diaries. *Mappy Python Diaries*. https://brownearthlab.github.io/mappy-python/intro.html. 
+Song, J., A. Choudhury, and S. Şalap-Ayça. 2024. *Mappy Python Diaries*. https://doi.org/10.5281/zenodo.20708030.
 
 ## Acknowledgements
 *Mappy Python Diaries* © 2024 was supported by the one of the nine Data Science Seed Grants (FY2025) funded by the Data Science Institute at Brown University, Providence, Rhode Island, USA. Work is licensed under [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International](https://creativecommons.org/licenses/by-nc-nd/4.0/).
